@@ -70,9 +70,14 @@ In VoodooPS2Keyboard.kext:
     - [Codec-Commander](https://github.com/RehabMan/EAPD-Codec-Commander)
 - [x] Network
     - Wi-Fi
-        - [TL-WN725N V2 Driver](https://www.tp-link.com/us/download/TL-WN725N_V2.html#Driver)
+        - USB
+          [TL-WN725N V2 Driver](https://www.tp-link.com/us/download/TL-WN725N_V2.html#Driver)
+
+        - BCM94352Z
+
+          [Broadcom WiFi/Bluetooth [Guide]](https://www.tonymacx86.com/threads/broadcom-wifi-bluetooth-guide.242423/)
     - Ethernet
-    	- [AtherosE2200Ethernet](https://github.com/Mieze/AtherosE2200Ethernet)
+      [AtherosE2200Ethernet](https://github.com/Mieze/AtherosE2200Ethernet)
 - [x] dual-GPU
     - [[Guide] Disabling discrete graphics in dual-GPU laptops](https://www.tonymacx86.com/threads/guide-disabling-discrete-graphics-in-dual-gpu-laptops.163772/)
     - [[Guide] Using Clover to "hotpatch" ACPI](https://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/) #3
