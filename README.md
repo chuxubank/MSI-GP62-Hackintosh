@@ -87,6 +87,7 @@ In VoodooPS2Keyboard.kext:
 
 Monitor:
 - [Intel® Power Gadget](https://software.intel.com/zh-cn/articles/intel-power-gadget-20)
+- [IO Registry Explorer](https://developer.apple.com/download/more/)
 
 NTFS Writer:
 - [Mounty](http://enjoygineering.com/mounty/)
