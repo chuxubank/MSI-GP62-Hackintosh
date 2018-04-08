@@ -431,13 +431,13 @@
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP133.88Z.0242.B00.1802080916</string>
+		<string>MBP141.88Z.0173.B00.1802081002</string>
 		<key>Board-ID</key>
-		<string>Mac-A5C67F76ED83108C</string>
+		<string>Mac-B4831CEBD52A0C4C</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02635207GUF9H2CB</string>
+		<string>C02703700OPDJWKJA</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -451,7 +451,7 @@
 		<key>Family</key>
 		<string>MacBook Pro</string>
 		<key>FirmwareFeatures</key>
-		<string>0xFC0FE13F</string>
+		<string>0xFC0FE137</string>
 		<key>FirmwareFeaturesMask</key>
 		<string>0xFF1FFF3F</string>
 		<key>LocationInChassis</key>
@@ -463,13 +463,13 @@
 		<key>PlatformFeature</key>
 		<string>0x1A</string>
 		<key>ProductName</key>
-		<string>MacBookPro13,3</string>
+		<string>MacBookPro14,1</string>
 		<key>ProductName-Comment</key>
 		<string>Using Haswell MacBookAir6,2 until Clover has support for Skylake identifiers</string>
 		<key>SerialNumber</key>
-		<string>C02S917YGTFN</string>
+		<string>C02T4156HV29</string>
 		<key>SmUUID</key>
-		<string>43DCE952-6A26-41DF-8548-CE1F95E6F1CD</string>
+		<string>819E0BB4-CB2A-408F-A2EC-2B6A327192E3</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
