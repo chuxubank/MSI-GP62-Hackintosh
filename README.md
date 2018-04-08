@@ -40,7 +40,7 @@ Here is something I used to install Hackintosh on my MSI GP62 6QG-1071XCN.
 ## Features
 
 - [x] PS2 Controller
-      - [Voodoo PS/2 Controller](https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller)
+	- [Voodoo PS/2 Controller](https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller)
 
 In VoodooPS2Keyboard.kext:
 
@@ -62,6 +62,11 @@ In VoodooPS2Keyboard.kext:
 
 - [x] Battery
     - [ACPIBatteryManager](https://github.com/RehabMan/OS-X-ACPI-Battery-Driver)
+- [x] CPU
+  - [Skylake HWP Enable](https://www.tonymacx86.com/threads/skylake-hwp-enable.214915/)
+  - [[Guide] Native Power Management for Laptops](https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/)
+  - [[原创内容] 开启完整HWP(SpeedShift)电源管理特性](http://bbs.pcbeta.com/viewthread-1737021-1-1.html)
+  - [CPUFriend](https://github.com/PMheart/CPUFriend)
 - [x] Blacklight
   - [[Guide] Laptop backlight control using AppleBacklightInjector.kext](https://www.tonymacx86.com/threads/guide-laptop-backlight-control-using-applebacklightinjector-kext.218222/)
 - [x] Sound
@@ -95,3 +100,19 @@ NTFS Writer:
 ## Others
 
 [Close SIP](https://www.tonymacx86.com/threads/explaining-os-x-el-capitan-security-changes-workarounds-and-current-information.170611/)
+
+[Lilu 相关内容说明 & 插件列表](http://bbs.pcbeta.com/viewthread-1741470-1-1.html)
+
+## iCloud
+
+[FIX iMessage, Facetime, and App Store 2018 Tutorial](https://www.youtube.com/watch?v=JhA7e26dGgM)
+
+[SMBIOS of Hackintosh Explained! -- Learn to Configure Config.plist](https://www.youtube.com/watch?v=bYELTlMcGsQ)
+
+
+
+# Alert
+
+Do NOT directly use the file provided, you need to change something so that it won't cause a problem.
+
+The best way to make your own Hackintosh installed is following the guide list above step by step.
