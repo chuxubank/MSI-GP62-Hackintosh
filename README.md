@@ -7,6 +7,7 @@ Here is something I used to install Hackintosh on my MSI GP62 6QG-1071XCN.
 - [insanelymac](http://www.insanelymac.com)
 - [远景](http://bbs.pcbeta.com)
 - [idelta](https://www.idelta.info)
+- [Pike's Universum](https://pikeralpha.wordpress.com)
 
 ## Install(Choose one way)
 
@@ -87,6 +88,8 @@ In VoodooPS2Keyboard.kext:
     - [[Guide] Disabling discrete graphics in dual-GPU laptops](https://www.tonymacx86.com/threads/guide-disabling-discrete-graphics-in-dual-gpu-laptops.163772/)
     - [[Guide] Using Clover to "hotpatch" ACPI](https://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/) #3
     - [Disabling NVIDIA Optimus card on all laptops](https://www.insanelymac.com/forum/forums/topic/295584-disabling-nvidia-optimus-card-on-all-laptops/)
+- [x] GPU
+	- [IntelGraphicsFixup](https://github.com/lvs1974/IntelGraphicsFixup)
 
 ## Apps
 
