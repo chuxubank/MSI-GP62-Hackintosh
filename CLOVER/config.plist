@@ -228,6 +228,11 @@
 				</data>
 			</dict>
 		</array>
+		<key>Audio</key>
+		<dict>
+			<key>Inject</key>
+			<string>99</string>
+		</dict>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
@@ -528,7 +533,7 @@
 	<key>SystemParameters</key>
 	<dict>
 		<key>BacklightLevel</key>
-		<string>0x8888</string>
+		<string>0x5555</string>
 		<key>InjectKexts</key>
 		<string>Detect</string>
 	</dict>

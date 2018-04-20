@@ -22,6 +22,9 @@ Here is something I used to install Hackintosh on my MSI GP62 6QG-1071XCN.
 ### Under Windows
 - [远景](bbs.pcbeta.com)
 
+## Boot
+- [Apfs.efi for macOS High Sierra](https://github.com/JennyDavid/Apfs.efi-for-macOS-High-Sierra)
+
 ## Clover 
 - [Clover EFI bootloader](http://sourceforge.net/projects/cloverefiboot/)
 - [Clover Configurator](http://mackie100projects.altervista.org)
@@ -100,6 +103,9 @@ Monitor:
 
 NTFS Writer:
 - [Mounty](http://enjoygineering.com/mounty/)
+
+System:
+- [iTunes](https://www.apple.com/cn/itunes/download/)
 
 ## Others
 
