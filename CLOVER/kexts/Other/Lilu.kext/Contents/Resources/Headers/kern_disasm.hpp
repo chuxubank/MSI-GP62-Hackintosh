@@ -22,6 +22,7 @@
 #include <mach/vm_types.h>
 
 class Disassembler {
+#ifdef LILU_ADVANCED_DISASSEMBLY
 	/**
 	 *  Because captsone handle can be 0
 	 */
@@ -30,7 +31,8 @@ class Disassembler {
 	/**
 	 *  Internal capstone handle
 	 */
-	size_t handle;
+	size_t handle {};
+#endif
 
 	/**
 	 *  Max instruction size
@@ -41,6 +43,7 @@ public:
 	/**
 	 *  Return the real instruction size contained within min bytes
 	 *  Unlike instructionSize this uses HDE engine and at the cost of reduced compatibility it is much faster
+	 *  Note: instruction pointer should point to at least min + 32 valid bytes.
 	 *
 	 *  @param ptr instruction pointer
 	 *  @param min minimal possible size
