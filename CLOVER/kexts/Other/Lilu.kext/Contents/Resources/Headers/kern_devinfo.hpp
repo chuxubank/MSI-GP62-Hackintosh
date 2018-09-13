@@ -145,6 +145,12 @@ private:
 	static constexpr const char *ReportedVesaIdArg = "-igfxvesa";
 
 	/**
+	 *  The boot-arg to force-disable any external GPU if found.
+	 *  For user configuration only! Use requestedExternalSwitchOff!
+	 */
+	static constexpr const char *RequestedExternalSwitchOffArg {"-wegnoegpu"};
+
+	/**
 	 *  The property to set your platform id for Intel drivers (Ivy and newer).
 	 *  For user configuration only! Use reportedFramebufferName!
 	 */
@@ -157,16 +163,27 @@ private:
 	static constexpr const char *ReportedFrameIdLegacyName = "AAPL,snb-platform-id";
 
 	/**
+	 *  The IGPU property to force-disable any external GPU if found.
+	 *  For user configuration only! Use requestedExternalSwitchOff!
+	 */
+	static constexpr const char *RequestedExternalSwitchOffName {"disable-external-gpu"};
+
+	/**
 	 *  Known platform ids used by Intel GPU kexts
 	 *  For user configuration only!
 	 */
-	static constexpr uint32_t DefaultSkylakePlatformId {0x19120000};
-	static constexpr uint32_t DefaultKabyLakePlatformId {0x59160000};
-	static constexpr uint32_t DefaultCoffeeLakePlatformId {0x3EA50000};
+	static constexpr uint32_t DefaultAppleSkylakePlatformId {0x19120000};
+	static constexpr uint32_t DefaultAppleKabyLakePlatformId {0x59160000};
+	static constexpr uint32_t DefaultAppleCoffeeLakePlatformId {0x3EA50000};
+	static constexpr uint32_t DefaultAppleCannonLakePlatformId {0x5A520000};
+	static constexpr uint32_t DefaultAppleIceLakeRealPlatformId {0x8A520000};
+	static constexpr uint32_t DefaultAppleIceLakeSimulatorPlatformId {0xFF050000};
 
 	/**
 	 *  Framebuffers without any ports used for hardware acceleration only
-	 *  Note: Broadwell framebuffers all have connectors added.
+	 *  Note 1: Broadwell framebuffers all have connectors added.
+	 *  Note 2: Coffee Lake framebuffers without connectors are only present in 10.14.
+	 *  Note 3: prerelease Cannon Lake and Ice Lake framebuffers are without connectors.
 	 *  For user configuration only!
 	 */
 	static constexpr uint32_t ConnectorLessSandyBridgePlatformId1 {0x00030030};
@@ -231,6 +248,11 @@ public:
 	 *  Firmware vendor manufacturer
 	 */
 	FirmwareVendor firmwareVendor {FirmwareVendor::Unknown};
+
+	/**
+	 *  Requested external GPU switchoff
+	 */
+	bool requestedExternalSwitchOff {false};
 
 	/**
 	 *  Allocate and initialise the device list.

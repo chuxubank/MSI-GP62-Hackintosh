@@ -50,6 +50,15 @@ namespace WIOKit {
 		return false;
 	}
 
+	/**
+	 *  Read typed OSData through a temp type
+	 *
+	 *  @param obj    read object
+	 *  @param value  read value
+	 *  @param name   propert name
+	 *
+	 *  @return true on success
+	 */
 	template <typename AS, typename T>
 	inline bool getOSDataValue(const OSObject *obj, const char *name, T &value) {
 		AS tmp;
@@ -76,9 +85,29 @@ namespace WIOKit {
 	 *
 	 *  @see getOSDataValue
 	 */
+	template <typename AS, typename T>
+	inline bool getOSDataValue(const IORegistryEntry *sect, const char *name, T &value) {
+		return getOSDataValue<AS>(sect->getProperty(name), name, value);
+	}
+
+	/**
+	 *  Read typed OSData from IORegistryEntry
+	 *
+	 *  @see getOSDataValue
+	 */
 	template <typename T>
 	inline bool getOSDataValue(const OSDictionary *dict, const char *name, T &value) {
 		return getOSDataValue(dict->getObject(name), name, value);
+	}
+
+	/**
+	 *  Read typed OSData from IORegistryEntry
+	 *
+	 *  @see getOSDataValue
+	 */
+	template <typename AS, typename T>
+	inline bool getOSDataValue(const OSDictionary *dict, const char *name, T &value) {
+		return getOSDataValue<AS>(dict->getObject(name), name, value);
 	}
 
 	/**
@@ -119,12 +148,15 @@ namespace WIOKit {
 	 */
 	struct ClassCode {
 		enum : uint32_t {
-			VGAController = 0x30000,
-			DisplayController = 0x38000,
-			PCIBridge = 0x60400,
-			HDADevice = 0x040300,
+			VGAController     = 0x030000,
+			DisplayController = 0x038000,
+			PCIBridge         = 0x060400,
+			// Watch out for PCISubclassMask, 0x040380 is common on laptops.
+			HDADevice         = 0x040300,
 			// This does not seem to be documented. It works on Haswell at least.
-			IMEI = 0x78000
+			IMEI              = 0x078000,
+			// To ignore device subclasses.
+			PCISubclassMask   = 0xFFFF00,
 		};
 	};
 

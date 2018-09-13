@@ -197,7 +197,7 @@
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<string>99</string>
+			<integer>99</integer>
 		</dict>
 		<key>USB</key>
 		<dict>
@@ -322,31 +322,19 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>10.12+-BCM94352-fvco-darkvoid</string>
-				<key>Find</key>
-				<data>gflSqgAAdSk=</data>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.AirPort.Brcm4360</string>
-				<key>Replace</key>
-				<data>gflSqgAAZpA=</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>disable port limit in XHCI kext (credit PMHeart)</string>
+				<string>USB Port limit patch 10.14 (credits FredWst)</string>
 				<key>Disabled</key>
 				<true/>
 				<key>Find</key>
-				<data>g32UDw+DlwQAAA==</data>
+				<data>g/sPD4MDBQAA</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
-				<string>10.13.4</string>
+				<string>10.14</string>
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
-				<data>g32UD5CQkJCQkA==</data>
+				<data>g/sPkJCQkJCQ</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -391,20 +379,6 @@
 				<string>com.apple.iokit.IOGraphicsFamily</string>
 				<key>Replace</key>
 				<data>AQAA6yI=</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Enable TRIM for SSD</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>AEFQUExFIFNTRAA=</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.iokit.IOAHCIBlockStorage</string>
-				<key>Replace</key>
-				<data>AAAAAAAAAAAAAAA=</data>
 			</dict>
 		</array>
 	</dict>
