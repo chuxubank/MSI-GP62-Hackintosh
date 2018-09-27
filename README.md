@@ -9,42 +9,28 @@ Here is something I used to install Hackintosh on my MSI GP62 6QG-1071XCN.
 - [idelta](https://www.idelta.info)
 - [Pike's Universum](https://pikeralpha.wordpress.com)
 
-## Install(Choose one way)
-
-### Under macOS
-
+## Install
 - Command
 [[Guide] Booting the OS X installer on LAPTOPS with Clover](https://www.tonymacx86.com/threads/guide-booting-the-os-x-installer-on-laptops-with-clover.148093/)
 
 - UniBeast
 [UniBeast: Install macOS High Sierra on Any Supported Intel-based PC](https://www.tonymacx86.com/threads/unibeast-install-macos-high-sierra-on-any-supported-intel-based-pc.235474/)
 
-### Under Windows
-- [远景](bbs.pcbeta.com)
+## Kexts
 
-## Boot
-- [Apfs.efi for macOS High Sierra](https://github.com/JennyDavid/Apfs.efi-for-macOS-High-Sierra)
-
-## Clover 
-- [Clover EFI bootloader](http://sourceforge.net/projects/cloverefiboot/)
-- [Clover Configurator](http://mackie100projects.altervista.org)
-- [Wiki](https://clover-wiki.zetam.org/home)
-
-## ACPI
-- [MaciASL](https://bitbucket.org/RehabMan/os-x-maciasl-patchmatic/downloads/)
-- [[Guide] Patching LAPTOP DSDT/SSDTs](https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/)
-- [[Guide] Using Clover to "hotpatch" ACPI](https://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/)
-- [RM Hotpatch](https://github.com/RehabMan/OS-X-Clover-Laptop-Config/tree/master/hotpatch)
-- [Hotpatch简介](http://bbs.pcbeta.com/viewthread-1741377-1-2.html)
-
-## Base
+- [ACPIBatteryManager](https://github.com/RehabMan/OS-X-ACPI-Battery-Driver)
+- [AppleALC](https://github.com/vit9696/AppleALC)
+- [AppleBacklightInjector](https://www.tonymacx86.com/threads/guide-laptop-backlight-control-using-applebacklightinjector-kext.218222/)
+- [AtherosE2200Ethernet](https://github.com/Mieze/AtherosE2200Ethernet)
+- [BrcmPatchRAM](https://github.com/RehabMan/OS-X-BrcmPatchRAM)
+- [Codec-Commander](https://github.com/RehabMan/EAPD-Codec-Commander)
+- [CPUFriend](https://github.com/PMheart/CPUFriend)
+- [FakePCIID](https://github.com/RehabMan/OS-X-Fake-PCI-ID)
 - [FakeSMC](https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek/downloads/)
-
-
-## Features
-
-- [x] PS2 Controller
-	- [Voodoo PS/2 Controller](https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller)
+- [Lilu](https://github.com/acidanthera/Lilu)
+- [USBInjectAll](https://github.com/RehabMan/OS-X-USB-Inject-All)
+- [VoodooPS2Controller](https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller)
+- [WhateverGreen](https://github.com/acidanthera/WhateverGreen)
 
 In VoodooPS2Keyboard.kext:
 
@@ -64,19 +50,12 @@ In VoodooPS2Keyboard.kext:
 </array>
 ```
 
-- [x] Battery
-    - [ACPIBatteryManager](https://github.com/RehabMan/OS-X-ACPI-Battery-Driver)
+## Guides
+- [tonymacx86](https://www.tonymacx86.com/forums/high-sierra-laptop-support.192/)
 - [x] CPU
   - [Skylake HWP Enable](https://www.tonymacx86.com/threads/skylake-hwp-enable.214915/)
   - [[Guide] Native Power Management for Laptops](https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/)
   - [[原创内容] 开启完整HWP(SpeedShift)电源管理特性](http://bbs.pcbeta.com/viewthread-1737021-1-1.html)
-  - [CPUFriend](https://github.com/PMheart/CPUFriend)
-- [x] Blacklight
-  - [[Guide] Laptop backlight control using AppleBacklightInjector.kext](https://www.tonymacx86.com/threads/guide-laptop-backlight-control-using-applebacklightinjector-kext.218222/)
-- [x] Sound
-    - [Lilu](https://github.com/vit9696/Lilu)
-    - [AppleALC](https://github.com/vit9696/AppleALC)
-    - [Codec-Commander](https://github.com/RehabMan/EAPD-Codec-Commander)
 - [x] Network
     - Wi-Fi
         - USB
@@ -85,16 +64,14 @@ In VoodooPS2Keyboard.kext:
         - BCM94352Z
 
           [Broadcom WiFi/Bluetooth [Guide]](https://www.tonymacx86.com/threads/broadcom-wifi-bluetooth-guide.242423/)
-    - Ethernet
-      [AtherosE2200Ethernet](https://github.com/Mieze/AtherosE2200Ethernet)
 - [x] dual-GPU
     - [[Guide] Disabling discrete graphics in dual-GPU laptops](https://www.tonymacx86.com/threads/guide-disabling-discrete-graphics-in-dual-gpu-laptops.163772/)
     - [[Guide] Using Clover to "hotpatch" ACPI](https://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/) #3
     - [Disabling NVIDIA Optimus card on all laptops](https://www.insanelymac.com/forum/forums/topic/295584-disabling-nvidia-optimus-card-on-all-laptops/)
-- [x] GPU
-	- [IntelGraphicsFixup](https://github.com/lvs1974/IntelGraphicsFixup)
 
-## Apps
+## Tools
+ACPI:
+- [MaciASL](https://bitbucket.org/RehabMan/os-x-maciasl-patchmatic/downloads/)
 
 Monitor:
 - [Intel® Power Gadget](https://software.intel.com/zh-cn/articles/intel-power-gadget-20)
@@ -104,14 +81,9 @@ Monitor:
 NTFS Writer:
 - [Mounty](http://enjoygineering.com/mounty/)
 
-System:
-- [iTunes](https://www.apple.com/cn/itunes/download/)
-
 ## Others
 
 [Close SIP](https://www.tonymacx86.com/threads/explaining-os-x-el-capitan-security-changes-workarounds-and-current-information.170611/)
-
-[Lilu 相关内容说明 & 插件列表](http://bbs.pcbeta.com/viewthread-1741470-1-1.html)
 
 ## iCloud
 
