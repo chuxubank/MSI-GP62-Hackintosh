@@ -180,7 +180,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 nv_disable=1 -igfxnohdmi -cdfon</string>
+		<string>brcmfx-country=CN dart=0 nv_disable=1 -cdfon</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>NeverHibernate</key>
@@ -287,7 +287,7 @@
 				<key>AAPL,ig-platform-id</key>
 				<data>AAAbGQ==</data>
 				<key>#hda-gfx</key>
-				<data>b25ib2FyZC0xAA==</data>
+				<string>onboard-1</string>
 				<key>#AAPL00,override-no-connect</key>
 				<data></data>
 				<key># DVMT-prealloc</key>
@@ -296,7 +296,7 @@
 				<integer>1</integer>
 				<key>framebuffer-stolenmem</key>
 				<data>AAAwAQ==</data>
-				<key>framebuffer-cursormem</key>
+				<key>framebuffer-fbmem</key>
 				<data>AACQAA==</data>
 				<key>## @0 LVDS-&gt;DP</key>
 				<string></string>
@@ -456,22 +456,7 @@
 		</array>
 		<key>KextsToPatch</key>
 		<array>
-			<dict>
-				<key>Comment</key>
-				<string>USB Port limit patch 10.14 (credits FredWst)</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>g/sPD4MDBQAA</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.14</string>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>g/sPkJCQkJCQ</data>
-			</dict>
+		
 			<dict>
 				<key>Comment</key>
 				<string>change F%uT%04x to F%uTxxxx in AppleBacklightInjector.kext (credit RehabMan)</string>
@@ -485,36 +470,6 @@
 				<string>com.apple.driver.AppleBacklight</string>
 				<key>Replace</key>
 				<data>RiV1VHh4eHgA</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Boot graphics glitch, 10.13 beta (based on denskop patch)</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>AQAAdSI=</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.13.x</string>
-				<key>Name</key>
-				<string>com.apple.iokit.IOGraphicsFamily</string>
-				<key>Replace</key>
-				<data>AQAA6yI=</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Disable minStolenSize less or equal fStolenMemorySize assertion, 10.14 Credits (Sniki)</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>dkBI/wU=</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>60BI/wU=</data>
 			</dict>
 		</array>
 		<key>KernelToPatch</key>
@@ -531,7 +486,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Disable panic kext logging on 10.14 release kernel (credit Vandroiy)</string>
+				<string>Disable panic kext logging on 10.14 release kernel (credit vit9696)</string>
 				<key>MatchOS</key>
 				<string>10.14.x</string>
 				<key>Find</key>

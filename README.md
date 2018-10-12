@@ -38,16 +38,16 @@ In VoodooPS2Keyboard.kext:
 ```xml
 <key>Custom ADB Map</key>
 <array>
-<string>;Items must be strings in the form of scanfrom=adbto (in hex)</string>
-<string>e077=6b;use fu+down to decrease blacklight level</string>
-<string>e078=71;use fu+up to increase blacklight level</string>
+    <string>;Items must be strings in the form of scanfrom=adbto (in hex)</string>
+    <string>e077=6b;use fu+down to decrease blacklight level</string>
+    <string>e078=71;use fu+up to increase blacklight level</string>
 </array>
 <key>Custom PS2 Map</key>
 <array>
-<string>;Items must be strings in the form of scanfrom=scanto (in hex)</string>
-<string>e017=0;disable power key and fix sleep problem wtf?</string>
-<string>e027=0;disable discrete fnkeys toggle</string>
-<string>e028=0;disable discrete trackpad toggle</string>
+    <string>;Items must be strings in the form of scanfrom=scanto (in hex)</string>
+    <string>e017=0;disable power key and fix sleep problem wtf?</string>
+    <string>e027=0;disable discrete fnkeys toggle</string>
+    <string>e028=0;disable discrete trackpad toggle</string>
 </array>
 ```
 
