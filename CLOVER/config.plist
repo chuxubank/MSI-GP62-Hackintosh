@@ -196,6 +196,14 @@
 		<array>
 			<dict>
 				<key>Device</key>
+				<string>WIFI</string>
+				<key>Key</key>
+				<string>device-id</string>
+				<key>Value</key>
+				<data>MHg0M2EwMTRlNA==</data>
+			</dict>
+			<dict>
+				<key>Device</key>
 				<string>NVidia</string>
 				<key>Key</key>
 				<string>name</string>
@@ -275,11 +283,6 @@
 				<string>Inject bogus device-id to prevent graphics drivers loading for AMD</string>
 			</dict>
 		</array>
-		<key>Audio</key>
-		<dict>
-			<key>Inject</key>
-			<integer>99</integer>
-		</dict>
 		<key>Properties</key>
 		<dict>
 			<key>PciRoot(0)/Pci(0x02,0)</key>
@@ -456,7 +459,80 @@
 		</array>
 		<key>KextsToPatch</key>
 		<array>
-		
+			<dict>
+				<key>Comment</key>
+				<string>10.12+-BCM94352-fvco-darkvoid</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>gflSqgAAdSk=</data>
+				<key>MatchOS</key>
+				<string>10.12.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.AirPort.Brcm4360</string>
+				<key>Replace</key>
+				<data>gflSqgAAZpA=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>10.13-BCM94352-fvco-darkvoid-Sherlocks</string>
+				<key>Find</key>
+				<data>gflSqgAAdL8=</data>
+				<key>MatchOS</key>
+				<string>10.13.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.AirPort.BrcmNIC-MFG</string>
+				<key>Replace</key>
+				<data>gflSqgAAZpA=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>10.13-BCM94352-iovar-Sherlocks</string>
+				<key>Find</key>
+				<data>hdtMi2XIeXE=</data>
+				<key>MatchOS</key>
+				<string>10.13.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.AirPort.BrcmNIC-MFG</string>
+				<key>Replace</key>
+				<data>hdtMi2XI63E=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>10.13-BCM94352-iovar-Sherlocks</string>
+				<key>Find</key>
+				<data>SIPEEInDhdt5Rg==</data>
+				<key>MatchOS</key>
+				<string>10.13.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.AirPort.BrcmNIC-MFG</string>
+				<key>Replace</key>
+				<data>SIPEEInDhdvrRg==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>10.13-BCM94352-CC-Sebinouse-(edit 55 53 to CC)-PMheart</string>
+				<key>Find</key>
+				<data>QYP8/3Q1SI1V0A==</data>
+				<key>MatchOS</key>
+				<string>10.13.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.AirPort.BrcmNIC-MFG</string>
+				<key>Replace</key>
+				<data>ZscGVVPrNI1V0A==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>10.13-BCM94352-Airport-Extreme-Skvo-Sherlocks</string>
+				<key>Find</key>
+				<data>axAAAHUN</data>
+				<key>MatchOS</key>
+				<string>10.13.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.AirPort.BrcmNIC-MFG</string>
+				<key>Replace</key>
+				<data>axAAAJCQ</data>
+			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>change F%uT%04x to F%uTxxxx in AppleBacklightInjector.kext (credit RehabMan)</string>
@@ -502,21 +578,23 @@
 		<string>0x67</string>
 		<key>BooterConfig</key>
 		<string>0x28</string>
+		<key>ROM</key>
+		<string>UseMacAddr0</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>02/08/2018</string>
+		<string>06/05/2018</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP141.88Z.0173.B00.1802081002</string>
+		<string>MBP114.88Z.0184.B00.1806051659</string>
 		<key>Board-ID</key>
-		<string>Mac-B4831CEBD52A0C4C</string>
+		<string>Mac-06F11F11946D27C5</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02703700OPDJWKJA</string>
+		<string>C02653902GUGF2C1M</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -526,11 +604,11 @@
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
-		<string>0x09</string>
+		<string>0x0A</string>
 		<key>Family</key>
 		<string>MacBook Pro</string>
 		<key>FirmwareFeatures</key>
-		<string>0xFC0FE137</string>
+		<string>0xE80FE137</string>
 		<key>FirmwareFeaturesMask</key>
 		<string>0xFF1FFF3F</string>
 		<key>LocationInChassis</key>
@@ -540,17 +618,15 @@
 		<key>Mobile</key>
 		<true/>
 		<key>PlatformFeature</key>
-		<string>0x1A</string>
+		<string>0x02</string>
 		<key>ProductName</key>
-		<string>MacBookPro14,1</string>
-		<key>ProductName-Comment</key>
-		<string>Using Haswell MacBookAir6,2 until Clover has support for Skylake identifiers</string>
+		<string>MacBookPro11,5</string>
 		<key>SerialNumber</key>
-		<string>C02T4156HV29</string>
+		<string>C02SXPZ6G85Y</string>
 		<key>SmUUID</key>
-		<string>819E0BB4-CB2A-408F-A2EC-2B6A327192E3</string>
-		<key>Trust</key>
-		<true/>
+		<string>33C4CD47-F6D4-4BA9-B22F-8D1584FF061A</string>
+		<key>Version</key>
+		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
