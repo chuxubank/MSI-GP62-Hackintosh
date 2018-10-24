@@ -181,6 +181,8 @@
 	<dict>
 		<key>Arguments</key>
 		<string>brcmfx-country=CN dart=0 nv_disable=1 -cdfon</string>
+		<key>Debug</key>
+		<false/>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>NeverHibernate</key>
@@ -194,14 +196,6 @@
 	<dict>
 		<key>AddProperties</key>
 		<array>
-			<dict>
-				<key>Device</key>
-				<string>WIFI</string>
-				<key>Key</key>
-				<string>device-id</string>
-				<key>Value</key>
-				<data>MHg0M2EwMTRlNA==</data>
-			</dict>
 			<dict>
 				<key>Device</key>
 				<string>NVidia</string>
@@ -459,80 +453,6 @@
 		</array>
 		<key>KextsToPatch</key>
 		<array>
-			<dict>
-				<key>Comment</key>
-				<string>10.12+-BCM94352-fvco-darkvoid</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>gflSqgAAdSk=</data>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.AirPort.Brcm4360</string>
-				<key>Replace</key>
-				<data>gflSqgAAZpA=</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>10.13-BCM94352-fvco-darkvoid-Sherlocks</string>
-				<key>Find</key>
-				<data>gflSqgAAdL8=</data>
-				<key>MatchOS</key>
-				<string>10.13.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.AirPort.BrcmNIC-MFG</string>
-				<key>Replace</key>
-				<data>gflSqgAAZpA=</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>10.13-BCM94352-iovar-Sherlocks</string>
-				<key>Find</key>
-				<data>hdtMi2XIeXE=</data>
-				<key>MatchOS</key>
-				<string>10.13.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.AirPort.BrcmNIC-MFG</string>
-				<key>Replace</key>
-				<data>hdtMi2XI63E=</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>10.13-BCM94352-iovar-Sherlocks</string>
-				<key>Find</key>
-				<data>SIPEEInDhdt5Rg==</data>
-				<key>MatchOS</key>
-				<string>10.13.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.AirPort.BrcmNIC-MFG</string>
-				<key>Replace</key>
-				<data>SIPEEInDhdvrRg==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>10.13-BCM94352-CC-Sebinouse-(edit 55 53 to CC)-PMheart</string>
-				<key>Find</key>
-				<data>QYP8/3Q1SI1V0A==</data>
-				<key>MatchOS</key>
-				<string>10.13.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.AirPort.BrcmNIC-MFG</string>
-				<key>Replace</key>
-				<data>ZscGVVPrNI1V0A==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>10.13-BCM94352-Airport-Extreme-Skvo-Sherlocks</string>
-				<key>Find</key>
-				<data>axAAAHUN</data>
-				<key>MatchOS</key>
-				<string>10.13.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.AirPort.BrcmNIC-MFG</string>
-				<key>Replace</key>
-				<data>axAAAJCQ</data>
-			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>change F%uT%04x to F%uTxxxx in AppleBacklightInjector.kext (credit RehabMan)</string>
