@@ -21,7 +21,7 @@ Here is something I used to install Hackintosh on my MSI GP62 6QG-1071XCN.
 - [ACPIBatteryManager](https://github.com/RehabMan/OS-X-ACPI-Battery-Driver)
 - [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup)
 - [AppleALC](https://github.com/vit9696/AppleALC)
-- [AppleBacklightInjector](https://www.tonymacx86.com/threads/guide-laptop-backlight-control-using-applebacklightinjector-kext.218222/)
+- [AppleBacklightFixup](https://www.tonymacx86.com/threads/guide-laptop-backlight-control-using-applebacklightfixup-kext.218222/)
 - [AtherosE2200Ethernet](https://github.com/Mieze/AtherosE2200Ethernet)
 - [BrcmPatchRAM](https://github.com/RehabMan/OS-X-BrcmPatchRAM)
 - [Codec-Commander](https://github.com/RehabMan/EAPD-Codec-Commander)
