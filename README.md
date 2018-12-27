@@ -39,8 +39,8 @@ In VoodooPS2Keyboard.kext:
 <key>Custom ADB Map</key>
 <array>
     <string>;Items must be strings in the form of scanfrom=adbto (in hex)</string>
-    <string>e077=6b;use fu+down to decrease blacklight level</string>
-    <string>e078=71;use fu+up to increase blacklight level</string>
+    <string>e077=6b;use fu+down to decrease backlight level</string>
+    <string>e078=71;use fu+up to increase backlight level</string>
 </array>
 <key>Custom PS2 Map</key>
 <array>
