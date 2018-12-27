@@ -497,18 +497,33 @@
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
+		<key>#Slots</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>there is a sample</string>
+				<key>Device</key>
+				<string>WIFI</string>
+				<key>ID</key>
+				<integer>5</integer>
+				<key>Name</key>
+				<string>Airport</string>
+				<key>Type</key>
+				<integer>1</integer>
+			</dict>
+		</array>
 		<key>BiosReleaseDate</key>
-		<string>06/05/2018</string>
+		<string>10/30/2018</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP114.88Z.0184.B00.1806051659</string>
+		<string>MBP133.88Z.F000.B00.1810301606</string>
 		<key>Board-ID</key>
-		<string>Mac-06F11F11946D27C5</string>
+		<string>Mac-A5C67F76ED83108C</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02653902GUGF2C1M</string>
+		<string>C02631401GUHCF98C</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -518,11 +533,13 @@
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
-		<string>0x0A</string>
+		<string>0x09</string>
+		<key>EfiVersion</key>
+		<string>251.0.0.0.0</string>
 		<key>Family</key>
 		<string>MacBook Pro</string>
 		<key>FirmwareFeatures</key>
-		<string>0xE80FE137</string>
+		<string>0xFC0FE13F</string>
 		<key>FirmwareFeaturesMask</key>
 		<string>0xFF1FFF3F</string>
 		<key>LocationInChassis</key>
@@ -531,14 +548,20 @@
 		<string>Apple Inc.</string>
 		<key>Mobile</key>
 		<true/>
+		<key>OEMBoard</key>
+		<string>MS-16J5</string>
+		<key>OEMProduct</key>
+		<string>GP62 6QG</string>
+		<key>OEMVendor</key>
+		<string>Micro-Star International Co., Ltd.</string>
 		<key>PlatformFeature</key>
-		<string>0x02</string>
+		<string>0x1A</string>
 		<key>ProductName</key>
-		<string>MacBookPro11,5</string>
+		<string>MacBookPro13,3</string>
 		<key>SerialNumber</key>
-		<string>C02SXPZ6G85Y</string>
+		<string>C02S5MZYGTFN</string>
 		<key>SmUUID</key>
-		<string>33C4CD47-F6D4-4BA9-B22F-8D1584FF061A</string>
+		<string>8230449A-29C4-411D-9622-A8231502AC8F</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
