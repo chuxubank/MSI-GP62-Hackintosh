@@ -129,22 +129,6 @@
 					<key>Replace</key>
 					<data>SUdQVQ==</data>
 				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change PCI0.VID to IGPU #1 (Thinkpad)</string>
-					<key>Find</key>
-					<data>UENJMFZJRF8=</data>
-					<key>Replace</key>
-					<data>UENJMElHUFU=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change PCI0.VID to IGPU #2 (Thinkpad)</string>
-					<key>Find</key>
-					<data>VklEXwhfQURSDAAAAgA=</data>
-					<key>Replace</key>
-					<data>SUdQVQhfQURSDAAAAgA=</data>
-				</dict>
 			</array>
 		</dict>
 		<key>DropTables</key>
@@ -278,7 +262,7 @@
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<integer>99</integer>
+			<false/>
 		</dict>
 		<key>Properties</key>
 		<dict>
@@ -492,8 +476,6 @@
 		<string>0x67</string>
 		<key>BooterConfig</key>
 		<string>0x28</string>
-		<key>ROM</key>
-		<string>UseMacAddr0</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
