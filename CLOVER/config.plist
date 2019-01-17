@@ -270,6 +270,16 @@
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>AAAbGQ==</data>
+				<key>device-id</key>
+				<data>GxkAAA==</data>
+				<key>disable-external-gpu</key>
+				<data>AQAAAA==</data>
+				<key>enable-hdmi20</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-portcount</key>
+				<data>AgAAAA==</data>
+				<key>framebuffer-unifiedmem</key>
+				<data>AAAAgA==</data>
 				<key>#hda-gfx</key>
 				<string>onboard-1</string>
 				<key>#AAPL00,override-no-connect</key>
@@ -290,20 +300,22 @@
 				<integer>1</integer>
 				<key>#framebuffer-con0-type</key>
 				<data>AAQAAA==</data>
-				<key>## @1 HDMI</key>
+				<key># @1 HDMI</key>
 				<string></string>
-				<key>#framebuffer-con1-enable</key>
+				<key>framebuffer-con1-enable</key>
 				<integer>1</integer>
-				<key>#framebuffer-con1-type</key>
+				<key>framebuffer-con1-type</key>
 				<data>AAgAAA==</data>
 				<key>#framebuffer-con1-flags</key>
 				<data>hwEAAA==</data>
 				<key>#framebuffer-con1-pipe</key>
 				<data>EgAAAA==</data>
-				<key>## @2 HDMI</key>
+				<key># @2 HDMI</key>
 				<string></string>
-				<key>#framebuffer-con2-enable</key>
+				<key>framebuffer-con2-enable</key>
 				<integer>1</integer>
+				<key>framebuffer-con2-index</key>
+				<data>/////w==</data>
 				<key>#framebuffer-con2-type</key>
 				<data>AAgAAA==</data>
 				<key>#framebuffer-con2-flags</key>
