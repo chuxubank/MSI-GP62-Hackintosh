@@ -15,6 +15,7 @@
 - [远景](http://bbs.pcbeta.com)
 - [idelta](https://www.idelta.info)
 - [Pike's Universum](https://pikeralpha.wordpress.com)
+- [黑果小兵](https://blog.daliansky.net)
 
 ## Installation
 [[Guide] Booting the OS X installer on LAPTOPS with Clover](https://www.tonymacx86.com/threads/guide-booting-the-os-x-installer-on-laptops-with-clover.148093/)
@@ -39,7 +40,7 @@
 
 In VoodooPS2Keyboard.kext:
 
-```xml
+```plist
 <key>Custom ADB Map</key>
 <array>
     <string>;Items must be strings in the form of scanfrom=adbto (in hex)</string>
@@ -64,9 +65,13 @@ In VoodooPS2Keyboard.kext:
 - [x] Wi-Fi
   - [Broadcom WiFi/Bluetooth [Guide]](https://www.tonymacx86.com/threads/broadcom-wifi-bluetooth-guide.242423/)
 
-- [x] dual-GPU
+- [x] iGPU
+  - [[Guide] Intel Framebuffer patching using WhateverGreen](https://www.tonymacx86.com/threads/guide-intel-framebuffer-patching-using-whatevergreen.256490/)
+  - [one-key-hidpi](https://github.com/xzhih/one-key-hidpi)
+
+- [x] eGPU
   - [[Guide] Disabling discrete graphics in dual-GPU laptops](https://www.tonymacx86.com/threads/guide-disabling-discrete-graphics-in-dual-gpu-laptops.163772/)
-  - [[Guide] Using Clover to "hotpatch" ACPI](https://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/) #3
+  - [[Guide] Using Clover to "hotpatch" ACPI - Disabling discrete/switched GPU with Hotpatch](https://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/post-1308262)
   - [Disabling NVIDIA Optimus card on all laptops](https://www.insanelymac.com/forum/forums/topic/295584-disabling-nvidia-optimus-card-on-all-laptops/)
 
 - [x] iCloud
@@ -76,8 +81,8 @@ In VoodooPS2Keyboard.kext:
 ACPI:
 - [MaciASL](https://bitbucket.org/RehabMan/os-x-maciasl-patchmatic/downloads/)
 
-IGPU:
-- [Intel FB-Patcher](https://www.tonymacx86.com/threads/release-intel-fb-patcher-v1-6-9.254559/)
+Patch:
+- [Hackintool](https://www.tonymacx86.com/threads/release-hackintool-v1-7-5.254559/)
 
 Monitor:
 - [Intel® Power Gadget](https://software.intel.com/zh-cn/articles/intel-power-gadget-20)
