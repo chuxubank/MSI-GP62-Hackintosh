@@ -22,21 +22,45 @@
 
 ## Kexts
 
-- [ACPIBatteryManager](https://github.com/RehabMan/OS-X-ACPI-Battery-Driver)
-- [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup)
-- [AppleALC](https://github.com/vit9696/AppleALC)
-- [AppleBacklightFixup](https://www.tonymacx86.com/threads/guide-laptop-backlight-control-using-applebacklightfixup-kext.218222/)
-- [AtherosE2200Ethernet](https://github.com/Mieze/AtherosE2200Ethernet)
-- [BrcmPatchRAM](https://github.com/RehabMan/OS-X-BrcmPatchRAM)
+- [ ] [ACPIBatteryManager](https://github.com/RehabMan/OS-X-ACPI-Battery-Driver)
+
+- [x] [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup)
+
+- [ ] [AppleALC](https://github.com/vit9696/AppleALC)
+
+- [ ] [AppleBacklightFixup](https://www.tonymacx86.com/threads/guide-laptop-backlight-control-using-applebacklightfixup-kext.218222/)
+
+- [x] [AtherosE2200Ethernet](https://github.com/Mieze/AtherosE2200Ethernet)
+
+- [ ] [BrcmPatchRAM](https://github.com/RehabMan/OS-X-BrcmPatchRAM)
+  - [ ] BrcmFirmwareRepo.kext
+  - [ ] BrcmPatchRAM2.kext
+
 - [BT4LEContiunityFixup](https://github.com/acidanthera/BT4LEContiunityFixup)
-- [Codec-Commander](https://github.com/RehabMan/EAPD-Codec-Commander)
+
+- [ ] [Codec-Commander](https://github.com/RehabMan/EAPD-Codec-Commander)
+
 - [CPUFriend](https://github.com/PMheart/CPUFriend)
-- [FakeSMC](https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek/downloads/)
-- [HibernationFixup](https://github.com/acidanthera/HibernationFixup)
-- [Lilu](https://github.com/acidanthera/Lilu)
+
+- [x] [FakeSMC](https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek/downloads/)
+
+- [ ] [HibernationFixup](https://github.com/acidanthera/HibernationFixup)
+
+- [x] [Lilu](https://github.com/acidanthera/Lilu)
+
 - [USBInjectAll](https://github.com/RehabMan/OS-X-USB-Inject-All)
-- [VoodooPS2Controller](https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller)
-- [WhateverGreen](https://github.com/acidanthera/WhateverGreen)
+
+- [ ] USBPorts.kext (gen by Hackintool)
+
+- [x] [VoodooPS2Controller](https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller)
+
+- [ ] [WhateverGreen](https://github.com/acidanthera/WhateverGreen)
+
+> - [x] : installed in `/Library/Extensions` & keep in `/EFI/Clover/Kexts/Other` because it's essential
+> - [ ] : only installed in `/Library/Extensions`
+> - : not used currently
+
+**Remember to use `sudo kextcache -i /` to rebuild cache after installed a kext to `/L/E`**
 
 ## Post Installation
 
