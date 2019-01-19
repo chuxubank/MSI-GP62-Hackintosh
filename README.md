@@ -57,6 +57,7 @@ In VoodooPS2Keyboard.kext:
 ```
 
 ## Post Installation
+
 - [x] CPU
   - [Skylake HWP Enable](https://www.tonymacx86.com/threads/skylake-hwp-enable.214915/)
   - [[Guide] Native Power Management for Laptops](https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/)
@@ -78,6 +79,7 @@ In VoodooPS2Keyboard.kext:
   - [FIX iMessage, Facetime, and App Store 2018 Tutorial](https://www.youtube.com/watch?v=JhA7e26dGgM)
 
 ## Tools
+
 ACPI:
 - [MaciASL](https://bitbucket.org/RehabMan/os-x-maciasl-patchmatic/downloads/)
 
@@ -97,6 +99,12 @@ NTFS Writer:
 ## Others
 
 [Close SIP](https://www.tonymacx86.com/threads/explaining-os-x-el-capitan-security-changes-workarounds-and-current-information.170611/)
+
+### Do not auto mount `Win` disk
+
+```bash
+$ sudo cp ./Other/fstab /etc
+```
 
 # Alert
 
