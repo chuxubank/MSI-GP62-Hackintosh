@@ -38,24 +38,6 @@
 - [VoodooPS2Controller](https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller)
 - [WhateverGreen](https://github.com/acidanthera/WhateverGreen)
 
-In VoodooPS2Keyboard.kext:
-
-```plist
-<key>Custom ADB Map</key>
-<array>
-    <string>;Items must be strings in the form of scanfrom=adbto (in hex)</string>
-    <string>e077=6b;use fu+down to decrease backlight level</string>
-    <string>e078=71;use fu+up to increase backlight level</string>
-</array>
-<key>Custom PS2 Map</key>
-<array>
-    <string>;Items must be strings in the form of scanfrom=scanto (in hex)</string>
-    <string>e017=0;disable power key and fix sleep problem wtf?</string>
-    <string>e027=0;disable discrete fnkeys toggle</string>
-    <string>e028=0;disable discrete trackpad toggle</string>
-</array>
-```
-
 ## Post Installation
 
 - [x] CPU
