@@ -15,7 +15,6 @@
 - [远景](http://bbs.pcbeta.com)
 - [idelta](https://www.idelta.info)
 - [Pike's Universum](https://pikeralpha.wordpress.com)
-- [黑果小兵](https://blog.daliansky.net)
 
 ## Installation
 [[Guide] Booting the OS X installer on LAPTOPS with Clover](https://www.tonymacx86.com/threads/guide-booting-the-os-x-installer-on-laptops-with-clover.148093/)
@@ -23,37 +22,23 @@
 ## Kexts
 
 - [ ] [ACPIBatteryManager](https://github.com/RehabMan/OS-X-ACPI-Battery-Driver)
-
 - [x] [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup)
-
 - [ ] [AppleALC](https://github.com/vit9696/AppleALC)
-
 - [ ] [AppleBacklightFixup](https://www.tonymacx86.com/threads/guide-laptop-backlight-control-using-applebacklightfixup-kext.218222/)
-
 - [x] [AtherosE2200Ethernet](https://github.com/Mieze/AtherosE2200Ethernet)
-
 - [ ] [BrcmPatchRAM](https://github.com/RehabMan/OS-X-BrcmPatchRAM)
   - [ ] BrcmFirmwareRepo.kext
   - [ ] BrcmPatchRAM2.kext
-
 - [BT4LEContiunityFixup](https://github.com/acidanthera/BT4LEContiunityFixup)
-
 - [ ] [Codec-Commander](https://github.com/RehabMan/EAPD-Codec-Commander)
-
 - [CPUFriend](https://github.com/PMheart/CPUFriend)
-
 - [x] [FakeSMC](https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek/downloads/)
-
 - [ ] [HibernationFixup](https://github.com/acidanthera/HibernationFixup)
-
 - [x] [Lilu](https://github.com/acidanthera/Lilu)
-
+- [ ] [NoTouchID](https://github.com/al3xtjames/NoTouchID)
 - [USBInjectAll](https://github.com/RehabMan/OS-X-USB-Inject-All)
-
 - [ ] USBPorts.kext (gen by Hackintool)
-
 - [x] [VoodooPS2Controller](https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller)
-
 - [ ] [WhateverGreen](https://github.com/acidanthera/WhateverGreen)
 
 > - [x] : installed in `/Library/Extensions` & keep in `/EFI/Clover/Kexts/Other` because it's essential
@@ -68,6 +53,8 @@
   - [Skylake HWP Enable](https://www.tonymacx86.com/threads/skylake-hwp-enable.214915/)
   - [[Guide] Native Power Management for Laptops](https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/)
   - [[原创内容] 开启完整HWP(SpeedShift)电源管理特性](http://bbs.pcbeta.com/viewthread-1737021-1-1.html)
+- [x] Fan Control
+  - [How EC work](https://github.com/YoyPa/isw/wiki/How-EC-work-(for-GS40-6QE-at-least))
 
 - [x] Wi-Fi
   - [Broadcom WiFi/Bluetooth [Guide]](https://www.tonymacx86.com/threads/broadcom-wifi-bluetooth-guide.242423/)
@@ -104,13 +91,12 @@ NTFS Writer:
 
 ## Others
 
-[Close SIP](https://www.tonymacx86.com/threads/explaining-os-x-el-capitan-security-changes-workarounds-and-current-information.170611/)
+- [Close SIP](https://www.tonymacx86.com/threads/explaining-os-x-el-capitan-security-changes-workarounds-and-current-information.170611/)
 
-### Do not auto mount `Win` disk
-
-```bash
-$ sudo cp ./Other/fstab /etc
-```
+- Disable auto mount
+	```bash
+	$ sudo cp ./Other/fstab /etc
+	```
 
 # Alert
 
