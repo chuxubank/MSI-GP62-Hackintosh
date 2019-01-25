@@ -129,6 +129,14 @@
 					<key>Replace</key>
 					<data>SUdQVQ==</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change _WAK to XWAK</string>
+					<key>Find</key>
+					<data>X1dBSw==</data>
+					<key>Replace</key>
+					<data>WFdBSw==</data>
+				</dict>
 			</array>
 		</dict>
 		<key>DropTables</key>
