@@ -29,7 +29,7 @@
 - [ ] [BrcmPatchRAM](https://github.com/RehabMan/OS-X-BrcmPatchRAM)
   - [ ] BrcmFirmwareRepo.kext
   - [ ] BrcmPatchRAM2.kext
-- [BT4LEContiunityFixup](https://github.com/acidanthera/BT4LEContiunityFixup)
+- [ ] [BT4LEContiunityFixup](https://github.com/acidanthera/BT4LEContiunityFixup)
 - [ ] [Codec-Commander](https://github.com/RehabMan/EAPD-Codec-Commander)
 - [CPUFriend](https://github.com/PMheart/CPUFriend)
 - [x] [FakeSMC](https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek/downloads/)
