@@ -131,11 +131,19 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change _WAK to XWAK</string>
+					<string>change _WAK to ZWAK</string>
 					<key>Find</key>
 					<data>X1dBSw==</data>
 					<key>Replace</key>
-					<data>WFdBSw==</data>
+					<data>WldBSw==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change _PTS to ZPTS</string>
+					<key>Find</key>
+					<data>X1BUUw==</data>
+					<key>Replace</key>
+					<data>WlBUUw==</data>
 				</dict>
 			</array>
 		</dict>
