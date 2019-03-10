@@ -94,10 +94,19 @@ NTFS Writer:
 - [Close SIP](https://www.tonymacx86.com/threads/explaining-os-x-el-capitan-security-changes-workarounds-and-current-information.170611/)
 
 - Disable auto mount
-	```bash
-	$ sudo cp ./Other/fstab /etc
-	```
+  
+  ```bash
+  sudo cp ./Other/fstab /etc
+  ```
+- Enable middle mouse for look up & data detectors
 
+  
+  ```bash
+  brew cask install Karabiner-Elements
+  cp ./Other/lookup.json ~/.config/karabiner/assets/complex_modifications
+  ```
+  You can use them in `Preferences > Complex Modifications > Add rule`
+    
 # Alert
 
 Do NOT directly use the file provided, you need to change something so that it won't cause a problem.
