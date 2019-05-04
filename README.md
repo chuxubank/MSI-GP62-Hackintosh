@@ -39,7 +39,7 @@
 - [USBInjectAll](https://github.com/RehabMan/OS-X-USB-Inject-All)
 - [ ] USBPorts.kext (gen by Hackintool)
 - [x] [VoodooPS2Controller](https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller)
-- [ ] [WhateverGreen](https://github.com/acidanthera/WhateverGreen)
+- [x] [WhateverGreen](https://github.com/acidanthera/WhateverGreen)
 
 > - [x] : installed in `/Library/Extensions` & keep in `/EFI/Clover/Kexts/Other` because it's essential
 > - [ ] : only installed in `/Library/Extensions`
@@ -53,6 +53,12 @@
   - [Skylake HWP Enable](https://www.tonymacx86.com/threads/skylake-hwp-enable.214915/)
   - [[Guide] Native Power Management for Laptops](https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/)
   - [[原创内容] 开启完整HWP(SpeedShift)电源管理特性](http://bbs.pcbeta.com/viewthread-1737021-1-1.html)
+  - [freqVectorsEdit.sh](https://github.com/Piker-Alpha/freqVectorsEdit.sh)
+    - [一条命令教你如何确认自己的机型及如何开启HWP](https://blog.daliansky.net/A-command-to-teach-you-how-to-confirm-their-own-models-and-how-to-open-the-HWP.html)
+    ```bash
+    cd /tmp && curl -s https://raw.githubusercontent.com/Piker-Alpha/freqVectorsEdit.sh/master/freqVectorsEdit.sh > /tmp/freqVectorsEdit.sh && chmod +x freqVectorsEdit.sh && /tmp/freqVectorsEdit.sh && sudo rm -rf /tmp/freqVectorsEdit.sh && sudo rm -rf /tmp/Mac-*.bin
+    ```
+
 - [x] Fan Control
   - [How EC work](https://github.com/YoyPa/isw/wiki/How-EC-work-(for-GS40-6QE-at-least))
 
