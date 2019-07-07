@@ -107,6 +107,14 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
+					<string>change AZAL to HDEF</string>
+					<key>Find</key>
+					<data>QVpBTA==</data>
+					<key>Replace</key>
+					<data>SERFRg==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
 					<string>change HECI to IMEI</string>
 					<key>Find</key>
 					<data>SEVDSQ==</data>
@@ -278,7 +286,7 @@
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<integer>0</integer>
+			<false/>
 		</dict>
 		<key>Properties</key>
 		<dict>
