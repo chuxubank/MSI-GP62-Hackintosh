@@ -19,51 +19,21 @@
 ## Installation
 [[Guide] Booting the OS X installer on LAPTOPS with Clover](https://www.tonymacx86.com/threads/guide-booting-the-os-x-installer-on-laptops-with-clover.148093/)
 
-## Kexts
-
-- [ ] [ACPIBatteryManager](https://github.com/RehabMan/OS-X-ACPI-Battery-Driver)
-- [x] [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup)
-- [ ] [AppleALC](https://github.com/vit9696/AppleALC)
-- [ ] [AppleBacklightFixup](https://www.tonymacx86.com/threads/guide-laptop-backlight-control-using-applebacklightfixup-kext.218222/)
-- [x] [AtherosE2200Ethernet](https://github.com/Mieze/AtherosE2200Ethernet)
-- [ ] [BrcmPatchRAM](https://github.com/RehabMan/OS-X-BrcmPatchRAM)
-  - [ ] BrcmFirmwareRepo.kext
-  - [ ] BrcmPatchRAM2.kext
-- [ ] [BT4LEContiunityFixup](https://github.com/acidanthera/BT4LEContiunityFixup)
-- [ ] [Codec-Commander](https://github.com/RehabMan/EAPD-Codec-Commander)
-- [CPUFriend](https://github.com/PMheart/CPUFriend)
-- [x] [FakeSMC](https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek/downloads/)
-- [ ] [HibernationFixup](https://github.com/acidanthera/HibernationFixup)
-- [x] [Lilu](https://github.com/acidanthera/Lilu)
-- [ ] [NoTouchID](https://github.com/al3xtjames/NoTouchID)
-- [USBInjectAll](https://github.com/RehabMan/OS-X-USB-Inject-All)
-- [ ] USBPorts.kext (gen by Hackintool)
-- [x] [VoodooPS2Controller](https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller)
-- [x] [WhateverGreen](https://github.com/acidanthera/WhateverGreen)
-
-> - [x] : installed in `/Library/Extensions` & keep in `/EFI/Clover/Kexts/Other` because it's essential
-> - [ ] : only installed in `/Library/Extensions`
-> - : not used currently
-
-**Remember to use `sudo kextcache -i /` to rebuild cache after installed a kext to `/L/E`**
-
 ## Post Installation
 
 - [x] CPU
   - [Skylake HWP Enable](https://www.tonymacx86.com/threads/skylake-hwp-enable.214915/)
   - [[Guide] Native Power Management for Laptops](https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/)
-  - [[原创内容] 开启完整HWP(SpeedShift)电源管理特性](http://bbs.pcbeta.com/viewthread-1737021-1-1.html)
-  - [freqVectorsEdit.sh](https://github.com/Piker-Alpha/freqVectorsEdit.sh)
-    - [一条命令教你如何确认自己的机型及如何开启HWP](https://blog.daliansky.net/A-command-to-teach-you-how-to-confirm-their-own-models-and-how-to-open-the-HWP.html)
-    ```bash
-    cd /tmp && curl -s https://raw.githubusercontent.com/Piker-Alpha/freqVectorsEdit.sh/master/freqVectorsEdit.sh > /tmp/freqVectorsEdit.sh && chmod +x freqVectorsEdit.sh && /tmp/freqVectorsEdit.sh && sudo rm -rf /tmp/freqVectorsEdit.sh && sudo rm -rf /tmp/Mac-*.bin
-    ```
+  - [one-key-cpufriend](https://github.com/stevezhengshiqi/one-key-cpufriend)
 
 - [x] Fan Control
   - [How EC work](https://github.com/YoyPa/isw/wiki/How-EC-work-(for-GS40-6QE-at-least))
 
 - [x] Wi-Fi
   - [Broadcom WiFi/Bluetooth [Guide]](https://www.tonymacx86.com/threads/broadcom-wifi-bluetooth-guide.242423/)
+  
+- [x] Bluetooth  
+  - [OS-X-BrcmPatchRAM](https://github.com/headkaze/OS-X-BrcmPatchRAM)
 
 - [x] iGPU
   - [[Guide] Intel Framebuffer patching using WhateverGreen](https://www.tonymacx86.com/threads/guide-intel-framebuffer-patching-using-whatevergreen.256490/)
@@ -80,7 +50,7 @@
 ## Tools
 
 ACPI:
-- [MaciASL](https://bitbucket.org/RehabMan/os-x-maciasl-patchmatic/downloads/)
+- [MaciASL](https://github.com/acidanthera/MaciASL)
 
 Patch:
 - [Hackintool](https://www.tonymacx86.com/threads/release-hackintool-v1-7-5.254559/)
