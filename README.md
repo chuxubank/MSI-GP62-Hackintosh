@@ -26,7 +26,7 @@
   - [[Guide] Native Power Management for Laptops](https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/)
   - [one-key-cpufriend](https://github.com/stevezhengshiqi/one-key-cpufriend)
 
-- [x] Fan Control
+- [ ] Fan Control
   - [How EC work](https://github.com/YoyPa/isw/wiki/How-EC-work-(for-GS40-6QE-at-least))
 
 - [x] Wi-Fi
@@ -82,7 +82,7 @@ NTFS Writer:
   cp ./Other/lookup.json ~/.config/karabiner/assets/complex_modifications
   ```
   You can use them in `Preferences > Complex Modifications > Add rule`
-    
+  
 # Alert
 
 Do NOT directly use the file provided, you need to change something so that it won't cause a problem.
