@@ -26,7 +26,7 @@
   - [[Guide] Native Power Management for Laptops](https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/)
   - [one-key-cpufriend](https://github.com/stevezhengshiqi/one-key-cpufriend)
 
-- [ ] Fan Control
+- [x] Fan Control
   - [How EC work](https://github.com/YoyPa/isw/wiki/How-EC-work-(for-GS40-6QE-at-least))
 
 - [x] Wi-Fi

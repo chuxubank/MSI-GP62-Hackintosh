@@ -22,7 +22,10 @@ DefinitionBlock ("", "SSDT", 2, "hack", "ps2", 0)
 				"3a=3b",	// 3a is PS2 for capslock, 3b is ADB for left control (normal map is 3a=39)
 				"1d=39",	// 1d is PS2 for left control, 39 is ADB for caps lock (normal map is 1d=3b)
 			},
-
+		},
+		"Synaptics TouchPad", Package()
+		{
+			"ButtonCount", 2,
 		},
 	})
 }
