@@ -1,4 +1,8 @@
+# folder
 OEM/
 ROM/
 doc/
 misc/
+
+# acpi
+origin/
