@@ -19,6 +19,8 @@
 ## Installation
 [[Guide] Booting the OS X installer on LAPTOPS with Clover](https://www.tonymacx86.com/threads/guide-booting-the-os-x-installer-on-laptops-with-clover.148093/)
 
+[Clover Bootloader](https://github.com/CloverHackyColor/CloverBootloader)
+
 ## Post Installation
 
 - [x] CPU
@@ -29,11 +31,11 @@
 - [x] Fan Control
   - [How EC work](https://github.com/YoyPa/isw/wiki/How-EC-work-(for-GS40-6QE-at-least))
 
-- [x] Wi-Fi
+- [x] Wi-Fi/Bluetooth
   - [Broadcom WiFi/Bluetooth [Guide]](https://www.tonymacx86.com/threads/broadcom-wifi-bluetooth-guide.242423/)
-  
-- [x] Bluetooth  
-  - [OS-X-BrcmPatchRAM](https://github.com/headkaze/OS-X-BrcmPatchRAM)
+
+- [x] USB
+  - [[Guide] Creating a Custom SSDT for USBInjectAll.kext](https://www.tonymacx86.com/threads/guide-creating-a-custom-ssdt-for-usbinjectall-kext.211311/)
 
 - [x] iGPU
   - [[Guide] Intel Framebuffer patching using WhateverGreen](https://www.tonymacx86.com/threads/guide-intel-framebuffer-patching-using-whatevergreen.256490/)
@@ -56,9 +58,11 @@ Patch:
 - [Hackintool](https://www.tonymacx86.com/threads/release-hackintool-v1-7-5.254559/)
 
 Monitor:
-- [Intel® Power Gadget](https://software.intel.com/zh-cn/articles/intel-power-gadget-20)
+- [Intel® Power Gadget](https://software.intel.com/en-us/articles/intel-power-gadget)
 
 - [IO Registry Explorer](https://developer.apple.com/download/more/)
+
+- [iStat Menus](https://bjango.com/mac/istatmenus/)
 
 - [HWSensors](https://github.com/kozlek/HWSensors)
 
@@ -88,3 +92,8 @@ NTFS Writer:
 Do NOT directly use the file provided, you need to change something so that it won't cause a problem.
 
 The best way to make your own Hackintosh installed is following the guide list above step by step.
+
+# Credits
+- [Apple](https://www.apple.com/) for macOS
+- [Acidanthera](https://github.com/acidanthera) for awesome kexts
+- [RehabMan](https://github.com/RehabMan) for guides and kexts
