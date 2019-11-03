@@ -6,3 +6,6 @@ misc/
 
 # acpi
 origin/
+
+# clover
+.empty
