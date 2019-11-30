@@ -6,6 +6,8 @@
 	<dict>
 		<key>AutoMerge</key>
 		<true/>
+		<key>FixHeaders</key>
+		<true/>
 		<key>DSDT</key>
 		<dict>
 			<key>DropOEM_DSM</key>
@@ -16,25 +18,17 @@
 					<key>Comment</key>
 					<string>change _WAK to ZWAK</string>
 					<key>Find</key>
-					<data>
-					X1dBSw==
-					</data>
+					<data>X1dBSw==</data>
 					<key>Replace</key>
-					<data>
-					WldBSw==
-					</data>
+					<data>WldBSw==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
 					<string>change _PTS to ZPTS</string>
 					<key>Find</key>
-					<data>
-					X1BUUw==
-					</data>
+					<data>X1BUUw==</data>
 					<key>Replace</key>
-					<data>
-					WlBUUw==
-					</data>
+					<data>WlBUUw==</data>
 				</dict>
 			</array>
 		</dict>
@@ -55,8 +49,6 @@
 				<string>xh_rvp10</string>
 			</dict>
 		</array>
-		<key>FixHeaders</key>
-		<true/>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
@@ -85,6 +77,11 @@
 	<dict>
 		<key>Properties</key>
 		<dict>
+			<key>PciRoot(0)/Pci(0x02,0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>AAASGQ==</data>
+			</dict>
 			<key>PciRoot(0)/Pci(0x1f,3)</key>
 			<dict>
 				<key>layout-id</key>
@@ -164,6 +161,8 @@
 	<dict>
 		<key>ForceKextsToLoad</key>
 		<array/>
+		<key>KextsToPatch</key>
+		<array/>
 		<key>KernelToPatch</key>
 		<array>
 			<dict>
@@ -172,17 +171,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				ILniAAAADzA=
-				</data>
+				<data>ILniAAAADzA=</data>
 				<key>Replace</key>
-				<data>
-				ILniAAAAkJA=
-				</data>
+				<data>ILniAAAAkJA=</data>
 			</dict>
 		</array>
-		<key>KextsToPatch</key>
-		<array/>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
@@ -193,8 +186,58 @@
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
+		<key>BiosReleaseDate</key>
+		<string>10/30/2018</string>
+		<key>BiosVendor</key>
+		<string>Apple Inc.</string>
+		<key>BiosVersion</key>
+		<string>MBP133.88Z.F000.B00.1810301606</string>
+		<key>Board-ID</key>
+		<string>Mac-A5C67F76ED83108C</string>
+		<key>BoardManufacturer</key>
+		<string>Apple Inc.</string>
+		<key>BoardSerialNumber</key>
+		<string>C02631401GUHCF98C</string>
+		<key>BoardType</key>
+		<integer>10</integer>
+		<key>BoardVersion</key>
+		<string>1.0</string>
+		<key>ChassisAssetTag</key>
+		<string>MacBook-Aluminum</string>
+		<key>ChassisManufacturer</key>
+		<string>Apple Inc.</string>
+		<key>ChassisType</key>
+		<string>0x09</string>
+		<key>EfiVersion</key>
+		<string>251.0.0.0.0</string>
+		<key>Family</key>
+		<string>MacBook Pro</string>
+		<key>FirmwareFeatures</key>
+		<string>0xFC0FE13F</string>
+		<key>FirmwareFeaturesMask</key>
+		<string>0xFF1FFF3F</string>
+		<key>LocationInChassis</key>
+		<string>Part Component</string>
+		<key>Manufacturer</key>
+		<string>Apple Inc.</string>
+		<key>Mobile</key>
+		<true/>
+		<key>OEMBoard</key>
+		<string>MS-16J5</string>
+		<key>OEMProduct</key>
+		<string>GP62 6QG</string>
+		<key>OEMVendor</key>
+		<string>Micro-Star International Co., Ltd.</string>
+		<key>PlatformFeature</key>
+		<string>0x1A</string>
 		<key>ProductName</key>
-		<string>MacBookPro13,1</string>
+		<string>MacBookPro13,3</string>
+		<key>SerialNumber</key>
+		<string>C02S5MZYGTFN</string>
+		<key>SmUUID</key>
+		<string>8230449A-29C4-411D-9622-A8231502AC8F</string>
+		<key>Version</key>
+		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
