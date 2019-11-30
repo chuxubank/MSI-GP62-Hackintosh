@@ -28,31 +28,31 @@ installed is to follow the guide list below step by step.
 - [[https://github.com/CloverHackyColor/CloverBootloader][Clover Bootloader]]
 
 ** Post Installation
-- [X] CPU
+*** CPU
   - [[https://www.tonymacx86.com/threads/skylake-hwp-enable.214915/][Skylake HWP Enable]]
   - [[https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/][(Guide) Native Power Management for Laptops]]
   - [[https://github.com/stevezhengshiqi/one-key-cpufriend][one-key-cpufriend]]
 
-- [X] Fan Control
-  - [[https://github.com/YoyPa/isw/wiki/MSI-G-laptop-EC---Rosetta][How EC work]]
+*** Fan Control
+- [[https://github.com/YoyPa/isw/wiki/MSI-G-laptop-EC---Rosetta][How EC work]]
 
-- [X] Wi-Fi/Bluetooth
-  - [[https://www.tonymacx86.com/threads/broadcom-wifi-bluetooth-guide.242423/][Broadcom WiFi/Bluetooth (Guide)]]
+*** Wi-Fi/Bluetooth
+- [[https://www.tonymacx86.com/threads/broadcom-wifi-bluetooth-guide.242423/][Broadcom WiFi/Bluetooth (Guide)]]
 
-- [X] USB
-  - [[https://www.tonymacx86.com/threads/guide-creating-a-custom-ssdt-for-usbinjectall-kext.211311/][(Guide) Creating a Custom SSDT for USBInjectAll.kext]]
+*** USB
+- [[https://www.tonymacx86.com/threads/guide-creating-a-custom-ssdt-for-usbinjectall-kext.211311/][(Guide) Creating a Custom SSDT for USBInjectAll.kext]]
 
-- [X] iGPU
-  - [[https://www.tonymacx86.com/threads/guide-intel-framebuffer-patching-using-whatevergreen.256490/][(Guide) Intel Framebuffer patching using WhateverGreen]]
-  - [[https://github.com/xzhih/one-key-hidpi][one-key-hidpi]]
+*** iGPU
+- [[https://www.tonymacx86.com/threads/guide-intel-framebuffer-patching-using-whatevergreen.256490/][(Guide) Intel Framebuffer patching using WhateverGreen]]
+- [[https://github.com/xzhih/one-key-hidpi][one-key-hidpi]]
 
-- [X] eGPU
-  - [[https://www.tonymacx86.com/threads/guide-disabling-discrete-graphics-in-dual-gpu-laptops.163772/][(Guide) Disabling discrete graphics in dual-GPU laptops]]
-  - [[https://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/post-1308262][(Guide) Using Clover to "hotpatch" ACPI - Disabling discrete/switched GPU with Hotpatch]]
-  - [[https://www.insanelymac.com/forum/forums/topic/295584-disabling-nvidia-optimus-card-on-all-laptops/][Disabling NVIDIA Optimus card on all laptops]]
+*** eGPU
+- [[https://www.tonymacx86.com/threads/guide-disabling-discrete-graphics-in-dual-gpu-laptops.163772/][(Guide) Disabling discrete graphics in dual-GPU laptops]]
+- [[https://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/post-1308262][(Guide) Using Clover to "hotpatch" ACPI - Disabling discrete/switched GPU with Hotpatch]]
+- [[https://www.insanelymac.com/forum/forums/topic/295584-disabling-nvidia-optimus-card-on-all-laptops/][Disabling NVIDIA Optimus card on all laptops]]
 
-- [X] iCloud
-  - [[https://www.youtube.com/watch?v=JhA7e26dGgM][FIX iMessage, Facetime, and App Store 2018 Tutorial]]
+*** iCloud
+- [[https://www.youtube.com/watch?v=JhA7e26dGgM][FIX iMessage, Facetime, and App Store 2018 Tutorial]]
 
 ** Tools
 *** ACPI
@@ -61,7 +61,7 @@ installed is to follow the guide list below step by step.
 *** Patch
 - [[https://www.tonymacx86.com/threads/release-hackintool-v1-7-5.254559/][Hackintool]]
 
-*** Monitor:
+*** Monitor
 - [[https://software.intel.com/en-us/articles/intel-power-gadget][Intel® Power Gadget]]
 - [[https://developer.apple.com/download/more/][IO Registry Explorer]]
 - [[https://bjango.com/mac/istatmenus/][iStat Menus]]
@@ -73,31 +73,31 @@ installed is to follow the guide list below step by step.
 ** Others
 - [[https://www.tonymacx86.com/threads/explaining-os-x-el-capitan-security-changes-workarounds-and-current-information.170611/][Close SIP]]
 
-- Disable auto mount
-  #+BEGIN_SRC sh
-    sudo cp ./Other/fstab /etc
-  #+END_SRC
+*** Disable auto mount
+#+BEGIN_SRC sh
+  sudo cp ./Other/fstab /etc
+#+END_SRC
 
-- Enable middle mouse for look up & data detectors
-  #+BEGIN_SRC sh
-    brew cask install Karabiner-Elements
-    cp ./Other/lookup.json ~/.config/karabiner/assets/complex_modifications
-  #+END_SRC
-  You can use them in =Preferences > Complex Modifications > Add rule=
+*** Enable middle mouse for look up & data detectors
+#+BEGIN_SRC sh
+  brew cask install Karabiner-Elements
+  cp ./Other/lookup.json ~/.config/karabiner/assets/complex_modifications
+#+END_SRC
+You can use them in =Preferences > Complex Modifications > Add rule=
 
-- HDMI/DP
-  1. Enable video output for your Product. (choose one method)
-     1. (default) change =ProductName= to =MacBookPro13,1= in =config.plist=. (thanks to @hsulei)
-     2. add config to plist. (credit [[https://github.com/PLChinDev/Dell-Precision-5510-Catalina][@PLChinDev]])
-        #+begin_src sh
-          sudo mount -uw /
-          cd /System/Library/Extensions/AppleGraphicsControl.kext/Contents/PlugIns/AppleGraphicsDevicePolicy.kext/Contents/
-          plutil -insert IOKitPersonalities.AppleGraphicsDevicePolicy.ConfigMap.Mac-A5C67F76ED83108C -string "none" Info.plist
-          sudo kextcache -i /
-        #+end_src
+*** HDMI/DP
+1. Enable video output for your Product. (choose one method)
+   - (default) change =ProductName= to =MacBookPro13,1= in =config.plist=. (thanks to @hsulei)
+   - add config to plist. (credit [[https://github.com/PLChinDev/Dell-Precision-5510-Catalina][@PLChinDev]])
+     #+begin_src sh
+       sudo mount -uw /
+       cd /System/Library/Extensions/AppleGraphicsControl.kext/Contents/PlugIns/AppleGraphicsDevicePolicy.kext/Contents/
+       plutil -insert IOKitPersonalities.AppleGraphicsDevicePolicy.ConfigMap.Mac-A5C67F76ED83108C -string "none" Info.plist
+       sudo kextcache -i /
+     #+end_src
 
-  2. choose a platform id.
-     1. =0x19120000= has functional HDMI/DP output but without build-in display.
-     2. (default) =0x19160000= / =0x191B000= or not set has build-in display but limited DP output.
+2. choose a platform id.
+   - (default) =0x19160000= / =0x191B000= or not set has build-in display but limited DP output.
+   - =0x19120000= has functional HDMI/DP output but without build-in display.
 
-  3. You need to plug in the HDMI/minDP cable until the macOS is booted to get the audio output.
+3. You should not plug in the HDMI/minDP cable until the macOS is booted to get the audio output.
