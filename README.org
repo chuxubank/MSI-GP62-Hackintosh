@@ -101,3 +101,6 @@ You can use them in =Preferences > Complex Modifications > Add rule=
    - =0x19120000= has functional HDMI/DP output but without build-in display.
 
 3. You should not plug in the HDMI/minDP cable until the macOS is booted to get the audio output.
+
+** Notes
+- If you want to edit plist's =Data= type in Xcode, you should use format like =<01000000>=.
