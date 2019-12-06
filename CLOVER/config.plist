@@ -75,7 +75,7 @@
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>NeverHibernate</key>
-		<true/>
+		<false/>
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
@@ -85,6 +85,19 @@
 	<dict>
 		<key>Properties</key>
 		<dict>
+			<key>PciRoot(0)/Pci(0x02,0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>
+				AAAbGQ==
+				</data>
+				<key>disable-external-gpu</key>
+				<integer>1</integer>
+				<key>enable-hdmi-dividers-fix</key>
+				<integer>1</integer>
+				<key>enable-hdmi20</key>
+				<integer>1</integer>
+			</dict>
 			<key>PciRoot(0)/Pci(0x1f,3)</key>
 			<dict>
 				<key>layout-id</key>
