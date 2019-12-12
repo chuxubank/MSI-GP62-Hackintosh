@@ -91,10 +91,6 @@
 				<data>
 				AAAbGQ==
 				</data>
-				<key>disable-external-gpu</key>
-				<integer>1</integer>
-				<key>enable-hdmi-dividers-fix</key>
-				<integer>1</integer>
 				<key>enable-hdmi20</key>
 				<integer>1</integer>
 			</dict>

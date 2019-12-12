@@ -97,8 +97,8 @@ You can use them in =Preferences > Complex Modifications > Add rule=
      #+end_src
 
 2. choose a platform id.
-   - (default) =0x19160000= / =0x191B000= or not set has build-in display but limited DP output.
-   - =0x19120000= has functional HDMI/DP output but without build-in display.
+   - (default) =0x19160000= / =0x191B000= or not set has build-in display but limited HDMI output(4K@30Hz/1080P@60Hz).
+   - =0x19120000= has functional HDMI/DP output(4K@60Hz) but without build-in display.
 
 3. You should not plug in the HDMI/minDP cable until the macOS is booted to get the audio output.
 
