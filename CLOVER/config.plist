@@ -71,7 +71,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string></string>
+		<string>agdpmod=vit9696</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>NeverHibernate</key>
@@ -203,7 +203,7 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>ProductName</key>
-		<string>MacBookPro13,1</string>
+		<string>MacBookPro13,3</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
