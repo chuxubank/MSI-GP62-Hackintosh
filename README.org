@@ -87,7 +87,8 @@ You can use them in =Preferences > Complex Modifications > Add rule=
 
 *** HDMI/DP
 1. Enable video output for your Product. (choose one method)
-   - (default) change =ProductName= to =MacBookPro13,1= in =config.plist=. (thanks to @hsulei)
+   - (default) use boot argument =agdpmod=vit9696= to disables check for board-id (credit [[https://github.com/acidanthera/WhateverGreen][WhateverGreen]])
+   - change =ProductName= to =MacBookPro13,1= in =config.plist=. (thanks to @hsulei)
    - add config to plist. (credit [[https://github.com/PLChinDev/Dell-Precision-5510-Catalina][@PLChinDev]])
      #+begin_src sh
        sudo mount -uw /
