@@ -2,9 +2,11 @@
 | Device   | Model        |
 |----------+--------------|
 | CPU      | i7-6700HQ    |
+| Chipset  | HM170        |
 | Audio    | ALC898       |
 | Ethernet | Killer E2400 |
 | Wi-Fi    | BCM94352Z    |
+| BIOS     | E16J5IMS.11D |
 
 ** Reference
 - [[http://tonymacx86.com][tonymacx86]]
@@ -102,6 +104,43 @@ You can use them in =Preferences > Complex Modifications > Add rule=
    - =0x19120000= has functional HDMI/DP output(4K@60Hz) but without build-in display.
 
 3. You should not plug in the HDMI/minDP cable until the macOS is booted to get the audio output.
+*** Modifiy hidden BIOS settings
+**** Unlock CFG
+1. Use [[https://github.com/LongSoft/UEFITool][UEFITool]] to open the [[https://cn.msi.com/Laptop/support/GP62-6QG-1071XCN][BIOS file]].
+2. Search for =CFG Lock= in Text segment.
+3. In the search segment, double click the search resoult to jump to it.
+4. Right click the highlighted search resoult, click =Extract body...=, and save
+   it as =cfg.bin=.
+5. Use [[https://github.com/LongSoft/Universal-IFR-Extractor][IFR Extractor]] to extract the text.
+   #+begin_src sh
+     ./ifrextract cfg.bin cfg.txt
+   #+end_src
+
+6. Search for =MSR 0xE2= in =cfg.txt=, look for =VarStoreInfo= and =VarStore=.
+7. Use [[https://github.com/datasone/grub-mod-setup_var][grub-mod-setup_var]] to create a GRUB bootloader in a NEW USB disk.
+   #+begin_src sh
+     ESP
+     └── EFI
+         └── BOOT
+             └── BOOTX64.efi
+   #+end_src
+
+8. Check CFG
+   #+begin_src sh
+     setup_var_3 0x123
+   #+end_src
+   The value =0x123= is your =VarStoreInfo='s value.
+   The resault value should be your =VarStore='s value.
+
+9. Unlock CFG
+   #+begin_src sh
+     setup_var_3 0x123 0x00
+   #+end_src
+
+#+begin_quote
+You can change =DVMT-Pre-Allocted= in the same way.
+Just search =DVMT= in your =cfg.txt= and do the same as follows.
+#+end_quote
 
 ** Notes
 - If you want to edit plist's =Data= type in Xcode, you should use format like =<01000000>=.
