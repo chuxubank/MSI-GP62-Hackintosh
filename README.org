@@ -25,15 +25,31 @@ Do NOT directly use the file provided, you need to change something so
 that it won't cause a problem. The best way to make your own Hackintosh
 installed is to follow the guide list below step by step.
 
+** Tools
+*** ACPI
+- [[https://github.com/acidanthera/MaciASL][MaciASL]]
+
+*** Patch
+- [[http://headsoft.com.au/download/mac/Hackintool.zip][Hackintool]]
+
+*** Monitor
+- [[https://software.intel.com/en-us/articles/intel-power-gadget][Intel® Power Gadget]]
+- [[https://developer.apple.com/download/more/][IO Registry Explorer]]
+- [[https://bjango.com/mac/istatmenus/][iStat Menus]]
+- [[https://github.com/kozlek/HWSensors][HWSensors]]
+
+*** NTFS Writer
+- [[http://enjoygineering.com/mounty/][Mounty]]
+
 ** Installation
 - [[https://www.tonymacx86.com/threads/guide-booting-the-os-x-installer-on-laptops-with-clover.148093/][(Guide) Booting the OS X installer on LAPTOPS with Clover]]
 - [[https://github.com/CloverHackyColor/CloverBootloader][Clover Bootloader]]
 
 ** Post Installation
 *** CPU
-  - [[https://www.tonymacx86.com/threads/skylake-hwp-enable.214915/][Skylake HWP Enable]]
-  - [[https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/][(Guide) Native Power Management for Laptops]]
-  - [[https://github.com/stevezhengshiqi/one-key-cpufriend][one-key-cpufriend]]
+- [[https://www.tonymacx86.com/threads/skylake-hwp-enable.214915/][Skylake HWP Enable]]
+- [[https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/][(Guide) Native Power Management for Laptops]]
+- [[https://github.com/stevezhengshiqi/one-key-cpufriend][one-key-cpufriend]]
 
 *** Fan Control
 - [[https://github.com/YoyPa/isw/wiki/MSI-G-laptop-EC---Rosetta][How EC work]]
@@ -56,25 +72,7 @@ installed is to follow the guide list below step by step.
 *** iCloud
 - [[https://www.youtube.com/watch?v=JhA7e26dGgM][FIX iMessage, Facetime, and App Store 2018 Tutorial]]
 
-** Tools
-*** ACPI
-- [[https://github.com/acidanthera/MaciASL][MaciASL]]
-
-*** Patch
-- [[https://www.tonymacx86.com/threads/release-hackintool-v1-7-5.254559/][Hackintool]]
-
-*** Monitor
-- [[https://software.intel.com/en-us/articles/intel-power-gadget][Intel® Power Gadget]]
-- [[https://developer.apple.com/download/more/][IO Registry Explorer]]
-- [[https://bjango.com/mac/istatmenus/][iStat Menus]]
-- [[https://github.com/kozlek/HWSensors][HWSensors]]
-
-*** NTFS Writer
-- [[http://enjoygineering.com/mounty/][Mounty]]
-
 ** Others
-- [[https://www.tonymacx86.com/threads/explaining-os-x-el-capitan-security-changes-workarounds-and-current-information.170611/][Close SIP]]
-
 *** Disable auto mount
 #+BEGIN_SRC sh
   sudo cp ./Other/fstab /etc
@@ -125,17 +123,19 @@ You can use them in =Preferences > Complex Modifications > Add rule=
              └── BOOTX64.efi
    #+end_src
 
-8. Check CFG
+8. Reboot to the GRUB Shell.
+
+9. Check CFG
    #+begin_src sh
      setup_var_3 0x123
    #+end_src
    The value =0x123= is your =VarStoreInfo='s value.
    The resault value should be your =VarStore='s value.
 
-9. Unlock CFG
-   #+begin_src sh
-     setup_var_3 0x123 0x00
-   #+end_src
+10. Unlock CFG
+    #+begin_src sh
+      setup_var_3 0x123 0x00
+    #+end_src
 
 #+begin_quote
 You can change =DVMT-Pre-Allocted= in the same way.
