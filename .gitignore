@@ -1,0 +1,13 @@
+._*
+
+# folder
+OEM/
+ROM/
+doc/
+misc/
+
+# acpi
+origin/
+
+# clover
+.empty
