@@ -1,0 +1,139 @@
+* Hackintosh on MSI GP62 6QG-1071XCN
+| Device   | Model        |
+|----------+--------------|
+| CPU      | i7-6700HQ    |
+| Chipset  | HM170        |
+| Audio    | ALC898       |
+| Ethernet | Killer E2400 |
+| Wi-Fi    | BCM94352Z    |
+| BIOS     | E16J5IMS.11D |
+
+** Reference
+- [[http://tonymacx86.com][tonymacx86]]
+- [[http://www.insanelymac.com][insanelymac]]
+- [[http://bbs.pcbeta.com][远景]]
+- [[https://www.idelta.info][idelta]]
+- [[https://pikeralpha.wordpress.com][Pike's Universum]]
+
+** Credits
+- [[https://www.apple.com/][Apple]] for macOS
+- [[https://github.com/acidanthera][Acidanthera]] for awesome kexts
+- [[https://github.com/RehabMan][RehabMan]] for guides and kexts
+
+** Alert
+Do NOT directly use the file provided, you need to change something so
+that it won't cause a problem. The best way to make your own Hackintosh
+installed is to follow the guide list below step by step.
+
+** Tools
+*** ACPI
+- [[https://github.com/acidanthera/MaciASL][MaciASL]]
+
+*** Patch
+- [[http://headsoft.com.au/download/mac/Hackintool.zip][Hackintool]]
+
+*** Monitor
+- [[https://software.intel.com/en-us/articles/intel-power-gadget][Intel® Power Gadget]]
+- [[https://developer.apple.com/download/more/][IO Registry Explorer]]
+- [[https://bjango.com/mac/istatmenus/][iStat Menus]]
+- [[https://github.com/kozlek/HWSensors][HWSensors]]
+
+*** NTFS Writer
+- [[http://enjoygineering.com/mounty/][Mounty]]
+
+** Installation
+- [[https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/][OpenCore Vanilla Guide]]
+** Post Installation
+*** CPU
+- [[https://github.com/stevezhengshiqi/one-key-cpufriend][one-key-cpufriend]]
+
+*** Fan Control
+- [[https://github.com/YoyPa/isw/wiki/MSI-G-laptop-EC---Rosetta][How EC work]]
+
+*** Bluetooth
+- [[https://github.com/acidanthera/BrcmPatchRAM][acidanthera/BrcmPatchRAM]]
+
+*** USB
+- [[https://www.tonymacx86.com/threads/guide-creating-a-custom-ssdt-for-usbinjectall-kext.211311/][(Guide) Creating a Custom SSDT for USBInjectAll.kext]]
+
+*** iGPU
+- [[https://www.tonymacx86.com/threads/guide-intel-framebuffer-patching-using-whatevergreen.256490/][(Guide) Intel Framebuffer patching using WhateverGreen]]
+- [[https://github.com/xzhih/one-key-hidpi][one-key-hidpi]]
+
+*** eGPU
+- [[https://www.tonymacx86.com/threads/guide-disabling-discrete-graphics-in-dual-gpu-laptops.163772/][(Guide) Disabling discrete graphics in dual-GPU laptops]]
+- [[https://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/post-1308262][(Guide) Using Clover to "hotpatch" ACPI - Disabling discrete/switched GPU with Hotpatch]]
+- [[https://www.insanelymac.com/forum/forums/topic/295584-disabling-nvidia-optimus-card-on-all-laptops/][Disabling NVIDIA Optimus card on all laptops]]
+
+*** iCloud
+- [[https://www.youtube.com/watch?v=JhA7e26dGgM][FIX iMessage, Facetime, and App Store 2018 Tutorial]]
+
+** Others
+*** Disable auto mount
+#+BEGIN_SRC sh
+  sudo cp ./Other/fstab /etc
+#+END_SRC
+
+*** Enable middle mouse for look up & data detectors
+#+BEGIN_SRC sh
+  brew cask install Karabiner-Elements
+  cp ./Other/lookup.json ~/.config/karabiner/assets/complex_modifications
+#+END_SRC
+You can use them in =Preferences > Complex Modifications > Add rule=
+
+*** Modifiy hidden BIOS settings
+**** Unlock CFG
+1. Use [[https://github.com/LongSoft/UEFITool][UEFITool]] to open the [[https://cn.msi.com/Laptop/support/GP62-6QG-1071XCN][BIOS file]].
+2. Search for =CFG Lock= in Text segment.
+3. In the search segment, double click the search resoult to jump to it.
+4. Right click the highlighted search resoult, click =Extract body...=, and save
+   it as =cfg.bin=.
+5. Use [[https://github.com/LongSoft/Universal-IFR-Extractor][IFR Extractor]] to extract the text.
+   #+begin_src sh
+     ./ifrextract cfg.bin cfg.txt
+   #+end_src
+
+6. Search for =MSR 0xE2= in =cfg.txt=, look for =VarStoreInfo= and =VarStore=.
+7. Use [[https://github.com/datasone/grub-mod-setup_var][grub-mod-setup_var]] to create a GRUB bootloader in a NEW USB disk.
+   #+begin_src sh
+     ESP
+     └── EFI
+         └── BOOT
+             └── BOOTX64.efi
+   #+end_src
+
+8. Reboot to the GRUB Shell.
+
+9. Check CFG
+   #+begin_src sh
+     setup_var_3 0x123
+   #+end_src
+   The value =0x123= is your =VarStoreInfo='s value.
+   The resault value should be your =VarStore='s value.
+
+10. Unlock CFG
+    #+begin_src sh
+      setup_var_3 0x123 0x00
+    #+end_src
+
+#+begin_quote
+You can change =DVMT-Pre-Allocted= in the same way.
+Just search =DVMT= in your =cfg.txt= and do the same as follows.
+Change it to a size bigger than 96mb maybe helpful for DP output on 4K monitor.
+#+end_quote
+
+*** HDMI/DP
+1. Enable video output for your Product. (choose one method)
+   - (default) use boot argument =agdpmod=vit9696= to disables check for board-id (credit [[https://github.com/acidanthera/WhateverGreen][WhateverGreen]])
+   - change =ProductName= to =MacBookPro13,1= in =config.plist=. (thanks to @hsulei)
+   - add config to plist. (credit [[https://github.com/PLChinDev/Dell-Precision-5510-Catalina][@PLChinDev]])
+     #+begin_src sh
+       sudo mount -uw /
+       cd /System/Library/Extensions/AppleGraphicsControl.kext/Contents/PlugIns/AppleGraphicsDevicePolicy.kext/Contents/
+       plutil -insert IOKitPersonalities.AppleGraphicsDevicePolicy.ConfigMap.Mac-A5C67F76ED83108C -string "none" Info.plist
+       sudo kextcache -i /
+     #+end_src
+
+2. You should not plug in the HDMI/minDP cable until the macOS is booted to get the audio output.
+** Notes
+- If you want to edit plist's =Data= type in Xcode, you should use format like =<01000000>=.
