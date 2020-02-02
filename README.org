@@ -34,7 +34,7 @@ installed is to follow the guide list below step by step.
 
 *** Monitor
 - [[https://software.intel.com/en-us/articles/intel-power-gadget][Intel® Power Gadget]]
-- [[https://developer.apple.com/download/more/][IO Registry Explorer]]
+- [[https://download.developer.apple.com/Developer_Tools/Additional_Tools_for_Xcode_11/Additional_Tools_for_Xcode_11.dmg][IO Registry Explorer]]
 - [[https://bjango.com/mac/istatmenus/][iStat Menus]]
 - [[https://github.com/kozlek/HWSensors][HWSensors]]
 
