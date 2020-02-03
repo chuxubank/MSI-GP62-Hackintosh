@@ -62,6 +62,14 @@
 				<key>Path</key>
 				<string>SSDT-PS2K.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Make fan quiet</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-FANQ.aml</string>
+			</dict>
 		</array>
 		<key>Block</key>
 		<array>
@@ -640,6 +648,22 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VoodooPS2Trackpad</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>MSIFanService.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/MSIFanService</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
