@@ -158,6 +158,16 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>change _OSI to XOSI, pair with SSDT-XOSI.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>X09TSQ==</data>
+				<key>Replace</key>
+				<data>WE9TSQ==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>_Q11 to XQ11</string>
 				<key>Count</key>
 				<integer>1</integer>
