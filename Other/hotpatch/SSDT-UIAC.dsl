@@ -24,6 +24,12 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_UIAC", 0)
 
         Name(RMCF, Package()
         {
+            // USB Power Properties for Sierra (using USBInjectAll injection)
+            "AppleBusPowerController", Package()
+            {
+                "kUSBSleepPortCurrentLimit", 2100,
+                "kUSBWakePortCurrentLimit", 2100,
+            },
             "8086_a12f", Package()
             {
                 "port-count", Buffer() { 26, 0, 0, 0 },
