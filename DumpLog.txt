@@ -1,0 +1,116 @@
+21:769  2:745  Found UEFI Acpi 2.0 RSDP at 78BBF000
+21:769  0:000  Saving ACPI tables from RSDP 78BBF000 to EFI\CLOVER\ACPI\origin ...
+21:769  0:000   78BBF000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+21:769  0:000    (Xsdt: 78BBF0A8, Rsdt: 78BBF028)
+21:769  0:000    78BBF0A8: 'XSDT', 'MEGABOOK', Rev: 1, Len: 212
+21:769  0:000    78BBF028: 'RSDT', 'MEGABOOK', Rev: 1, Len: 124
+21:769  0:000    Tables in Xsdt: 22
+21:769  0:000    0. 78BE48B8: 'FACP', 'MEGABOOK', Rev: 5, Len: 268
+21:769  0:000        (Dsdt: 78BBF218, Facs: 78E86F80, XDsdt: 78BBF218, XFacs: 0)
+21:769  0:000        78BBF218: 'DSDT', 'MEGABOOK', Rev: 2, Len: 153247
+21:770  0:001        78E86F80: 'FACS', Ver: 2, Len: 64
+21:770  0:000    1. 78BE49C8: 'APIC', 'MEGABOOK', Rev: 3, Len: 132
+21:770  0:000    2. 78BE4A50: 'FPDT', 'MEGABOOK', Rev: 1, Len: 68
+21:770  0:000    3. 78BE4A98: 'FIDT', 'MEGABOOK', Rev: 1, Len: 156
+21:770  0:000    4. 78BE4B38: 'MCFG', 'MEGABOOK', Rev: 1, Len: 60
+21:770  0:000    5. 78BE4B78: 'HPET', 'MEGABOOK', Rev: 1, Len: 56
+21:770  0:000    6. 78BE4BB0: 'LPIT', 'SKL', Rev: 1, Len: 148
+21:770  0:000    7. 78BE4C48: 'SSDT', 'sensrhub', Rev: 2, Len: 584
+21:770  0:000    8. 78BE4E90: 'SSDT', 'PtidDevc', Rev: 2, Len: 11182
+21:770  0:000    9. 78BE7A40: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3043
+21:770  0:000    10. 78BE8628: 'SSDT', 'zpodd', Rev: 2, Len: 1187
+21:770  0:000    11. 78BE8AD0: 'DBGP', '', Rev: 1, Len: 52
+21:770  0:000    12. 78BE8B08: 'DBG2', '', Rev: 0, Len: 84
+21:770  0:000    13. 78BE8B60: 'SSDT', 'xh_rvp11', Rev: 2, Len: 1586
+21:770  0:000    14. 78BE9198: 'SLIC', 'MEGABOOK', Rev: 1, Len: 374
+21:770  0:000    15. 78BE9310: 'SSDT', 'SaSsdt', Rev: 2, Len: 21932
+21:770  0:000    16. 78BEE8C0: 'UEFI', '', Rev: 1, Len: 66
+21:770  0:000    17. 78BEE908: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699
+21:770  0:000    18. 78BEF780: 'BGRT', 'MEGABOOK', Rev: 1, Len: 56
+21:770  0:000    19. 78BEF7B8: 'SSDT', 'SgPeg', Rev: 2, Len: 159
+21:770  0:000    20. 78BEF858: 'SSDT', 'OptTabl', Rev: 1, Len: 5051
+21:770  0:000    21. 78BF0C18: 'ASF!', ' HCG', Rev: 32, Len: 165
+21:770  0:000    Tables in Rsdt: 22
+21:770  0:000    0. 78BBF190: 'FACP', 'MEGABOOK', Rev: 2, Len: 132
+21:770  0:000        (Dsdt: 78BBF218, Facs: 78E86F40)
+21:770  0:000        78BBF218: 'DSDT', 'MEGABOOK', Rev: 2, Len: 153247
+21:771  0:001        78E86F40: 'FACS', Ver: 0, Len: 64
+21:771  0:000    1. 78BE49C8: 'APIC', 'MEGABOOK', Rev: 3, Len: 132
+21:771  0:000    2. 78BE4A50: 'FPDT', 'MEGABOOK', Rev: 1, Len: 68
+21:771  0:000    3. 78BE4A98: 'FIDT', 'MEGABOOK', Rev: 1, Len: 156
+21:771  0:000    4. 78BE4B38: 'MCFG', 'MEGABOOK', Rev: 1, Len: 60
+21:771  0:000    5. 78BE4B78: 'HPET', 'MEGABOOK', Rev: 1, Len: 56
+21:771  0:000    6. 78BE4BB0: 'LPIT', 'SKL', Rev: 1, Len: 148
+21:771  0:000    7. 78BE4C48: 'SSDT', 'sensrhub', Rev: 2, Len: 584
+21:771  0:000    8. 78BE4E90: 'SSDT', 'PtidDevc', Rev: 2, Len: 11182
+21:771  0:000    9. 78BE7A40: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3043
+21:771  0:000    10. 78BE8628: 'SSDT', 'zpodd', Rev: 2, Len: 1187
+21:771  0:000    11. 78BE8AD0: 'DBGP', '', Rev: 1, Len: 52
+21:771  0:000    12. 78BE8B08: 'DBG2', '', Rev: 0, Len: 84
+21:771  0:000    13. 78BE8B60: 'SSDT', 'xh_rvp11', Rev: 2, Len: 1586
+21:771  0:000    14. 78BE9198: 'SLIC', 'MEGABOOK', Rev: 1, Len: 374
+21:771  0:000    15. 78BE9310: 'SSDT', 'SaSsdt', Rev: 2, Len: 21932
+21:771  0:000    16. 78BEE8C0: 'UEFI', '', Rev: 1, Len: 66
+21:771  0:000    17. 78BEE908: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699
+21:771  0:000    18. 78BEF780: 'BGRT', 'MEGABOOK', Rev: 1, Len: 56
+21:771  0:000    19. 78BEF7B8: 'SSDT', 'SgPeg', Rev: 2, Len: 159
+21:771  0:000    20. 78BEF858: 'SSDT', 'OptTabl', Rev: 1, Len: 5051
+21:771  0:000    21. 78BF0C18: 'ASF!', ' HCG', Rev: 32, Len: 165
+21:771  0:000  Found UEFI Acpi 1.0 RSDP at 78BBF000
+21:771  0:000  Printing ACPI tables from RSDP 78BBF000 ...
+21:771  0:000   78BBF000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+21:771  0:000    (Xsdt: 78BBF0A8, Rsdt: 78BBF028)
+21:771  0:000    78BBF0A8: 'XSDT', 'MEGABOOK', Rev: 1, Len: 212
+21:771  0:000    78BBF028: 'RSDT', 'MEGABOOK', Rev: 1, Len: 124
+21:771  0:000    Tables in Xsdt: 22
+21:771  0:000    0. 78BE48B8: 'FACP', 'MEGABOOK', Rev: 5, Len: 268
+21:771  0:000        (Dsdt: 78BBF218, Facs: 78E86F80, XDsdt: 78BBF218, XFacs: 0)
+21:771  0:000        78BBF218: 'DSDT', 'MEGABOOK', Rev: 2, Len: 153247
+21:773  0:001        78E86F80: 'FACS', Ver: 2, Len: 64
+21:773  0:000    1. 78BE49C8: 'APIC', 'MEGABOOK', Rev: 3, Len: 132
+21:773  0:000    2. 78BE4A50: 'FPDT', 'MEGABOOK', Rev: 1, Len: 68
+21:773  0:000    3. 78BE4A98: 'FIDT', 'MEGABOOK', Rev: 1, Len: 156
+21:773  0:000    4. 78BE4B38: 'MCFG', 'MEGABOOK', Rev: 1, Len: 60
+21:773  0:000    5. 78BE4B78: 'HPET', 'MEGABOOK', Rev: 1, Len: 56
+21:773  0:000    6. 78BE4BB0: 'LPIT', 'SKL', Rev: 1, Len: 148
+21:773  0:000    7. 78BE4C48: 'SSDT', 'sensrhub', Rev: 2, Len: 584
+21:773  0:000    8. 78BE4E90: 'SSDT', 'PtidDevc', Rev: 2, Len: 11182
+21:773  0:000    9. 78BE7A40: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3043
+21:773  0:000    10. 78BE8628: 'SSDT', 'zpodd', Rev: 2, Len: 1187
+21:773  0:000    11. 78BE8AD0: 'DBGP', '', Rev: 1, Len: 52
+21:773  0:000    12. 78BE8B08: 'DBG2', '', Rev: 0, Len: 84
+21:773  0:000    13. 78BE8B60: 'SSDT', 'xh_rvp11', Rev: 2, Len: 1586
+21:773  0:000    14. 78BE9198: 'SLIC', 'MEGABOOK', Rev: 1, Len: 374
+21:773  0:000    15. 78BE9310: 'SSDT', 'SaSsdt', Rev: 2, Len: 21932
+21:773  0:000    16. 78BEE8C0: 'UEFI', '', Rev: 1, Len: 66
+21:773  0:000    17. 78BEE908: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699
+21:773  0:000    18. 78BEF780: 'BGRT', 'MEGABOOK', Rev: 1, Len: 56
+21:773  0:000    19. 78BEF7B8: 'SSDT', 'SgPeg', Rev: 2, Len: 159
+21:773  0:000    20. 78BEF858: 'SSDT', 'OptTabl', Rev: 1, Len: 5051
+21:773  0:000    21. 78BF0C18: 'ASF!', ' HCG', Rev: 32, Len: 165
+21:773  0:000    Tables in Rsdt: 22
+21:773  0:000    0. 78BBF190: 'FACP', 'MEGABOOK', Rev: 2, Len: 132
+21:773  0:000        (Dsdt: 78BBF218, Facs: 78E86F40)
+21:773  0:000        78BBF218: 'DSDT', 'MEGABOOK', Rev: 2, Len: 153247
+21:774  0:001        78E86F40: 'FACS', Ver: 0, Len: 64
+21:774  0:000    1. 78BE49C8: 'APIC', 'MEGABOOK', Rev: 3, Len: 132
+21:774  0:000    2. 78BE4A50: 'FPDT', 'MEGABOOK', Rev: 1, Len: 68
+21:774  0:000    3. 78BE4A98: 'FIDT', 'MEGABOOK', Rev: 1, Len: 156
+21:774  0:000    4. 78BE4B38: 'MCFG', 'MEGABOOK', Rev: 1, Len: 60
+21:774  0:000    5. 78BE4B78: 'HPET', 'MEGABOOK', Rev: 1, Len: 56
+21:774  0:000    6. 78BE4BB0: 'LPIT', 'SKL', Rev: 1, Len: 148
+21:774  0:000    7. 78BE4C48: 'SSDT', 'sensrhub', Rev: 2, Len: 584
+21:774  0:000    8. 78BE4E90: 'SSDT', 'PtidDevc', Rev: 2, Len: 11182
+21:774  0:000    9. 78BE7A40: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3043
+21:774  0:000    10. 78BE8628: 'SSDT', 'zpodd', Rev: 2, Len: 1187
+21:774  0:000    11. 78BE8AD0: 'DBGP', '', Rev: 1, Len: 52
+21:774  0:000    12. 78BE8B08: 'DBG2', '', Rev: 0, Len: 84
+21:774  0:000    13. 78BE8B60: 'SSDT', 'xh_rvp11', Rev: 2, Len: 1586
+21:774  0:000    14. 78BE9198: 'SLIC', 'MEGABOOK', Rev: 1, Len: 374
+21:774  0:000    15. 78BE9310: 'SSDT', 'SaSsdt', Rev: 2, Len: 21932
+21:774  0:000    16. 78BEE8C0: 'UEFI', '', Rev: 1, Len: 66
+21:774  0:000    17. 78BEE908: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699
+21:774  0:000    18. 78BEF780: 'BGRT', 'MEGABOOK', Rev: 1, Len: 56
+21:774  0:000    19. 78BEF7B8: 'SSDT', 'SgPeg', Rev: 2, Len: 159
+21:774  0:000    20. 78BEF858: 'SSDT', 'OptTabl', Rev: 1, Len: 5051
+21:774  0:000    21. 78BF0C18: 'ASF!', ' HCG', Rev: 32, Len: 165
