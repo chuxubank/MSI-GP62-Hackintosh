@@ -495,6 +495,10 @@
 			<key>UsePicker</key>
 			<true/>
 		</dict>
+		<key>BlessOverride</key>
+		<array>
+			<string>\EFI\Microsoft\Boot\bootmgfw.efi</string>
+		</array>
 		<key>Debug</key>
 		<dict>
 			<key>DisableWatchDog</key>
