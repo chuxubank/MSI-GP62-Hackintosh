@@ -613,7 +613,7 @@
 			<data>qCMVAqyP</data>
 			<key>SpoofVendor</key>
 			<true/>
-			<key>SupportsCsm</key>
+			<key>AdviseWindows</key>
 			<false/>
 			<key>SystemProductName</key>
 			<string>MacBookPro13,3</string>
