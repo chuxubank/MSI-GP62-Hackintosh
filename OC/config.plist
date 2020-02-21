@@ -643,6 +643,7 @@
 		<array>
 			<string>ApfsDriverLoader.efi</string>
 			<string>FwRuntimeServices.efi</string>
+			<string>VBoxHfs.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>
