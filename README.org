@@ -79,7 +79,7 @@ installed is to follow the guide list below step by step.
   brew cask install Karabiner-Elements
   cp ./Other/lookup.json ~/.config/karabiner/assets/complex_modifications
 #+END_SRC
-You can use them in =Preferences > Complex Modifications > Add rule=
+You can use them in =Preferences -> Complex Modifications -> Add rule=
 
 *** Modify hidden BIOS settings
 **** (Recommend) Advanced BIOS setting (credit [[github:lgs3137][@lgs3137]] / [[https://www.shinenet.cn/archives/61.html][@卖女孩的小火柴]] / [[github:fgfg163][@fgfg163]])
@@ -126,7 +126,6 @@ You can use them in =Preferences > Complex Modifications > Add rule=
 #+begin_quote
 You can change =DVMT-Pre-Allocted= in the same way.
 Just search =DVMT= in your =cfg.txt= and do the same as follows.
-Change it to a size bigger than 96mb maybe helpful for DP output on 4K monitor.
 #+end_quote
 *** HDMI/DP
 1. Enable video output for your Product. (choose one method)
