@@ -143,3 +143,8 @@ Change it to a size bigger than 96mb maybe helpful for DP output on 4K monitor.
 2. You should not plug in the HDMI/minDP cable until the macOS is booted to get the audio output.
 ** Notes
 - If you want to edit plist's =Data= type in Xcode, you should use format like =<01000000>=.
+** Donate
+If my work helps you, please support me for further updates.
+| Alipay                                                                                                          | WeChat Pay                                                                                                          | PayPal                                                                                                         |
+|-----------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------|
+| @@html:<img src="https://github.com/chuxubank/MSI-GP62-Hackintosh/raw/oc/.github/alipay.jpeg" width="150px"/>@@ | @@html:<img src="https://github.com/chuxubank/MSI-GP62-Hackintosh/raw/oc/.github/wechat_pay.jpeg" width="150px"/>@@ | @@html:<img src="https://github.com/chuxubank/MSI-GP62-Hackintosh/raw/oc/.github/paypal.png" width="150px"/>@@ |
