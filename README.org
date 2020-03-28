@@ -1,12 +1,12 @@
 * Hackintosh on MSI GP62 6QG-1071XCN
-| Device   | Model        |
-|----------+--------------|
-| CPU      | i7-6700HQ    |
-| Chipset  | HM170        |
-| Audio    | ALC898       |
-| Ethernet | Killer E2400 |
-| Wi-Fi    | BCM94352Z    |
-| BIOS     | E16J5IMS.11D |
+#+HTML: <img src="https://github.com/chuxubank/MSI-GP62-Hackintosh/raw/oc/Other/screenshot.png" align="right" width="70%"/>
+
+- CPU: i7-6700HQ
+- Chipset: HM170
+- Audio: ALC898
+- Ethernet: Killer E2400
+- Wi-Fi: BCM94352Z
+- BIOS: E16J5IMS.11D
 
 ** Reference
 - [[http://tonymacx86.com][tonymacx86]]
@@ -81,7 +81,14 @@ installed is to follow the guide list below step by step.
 #+END_SRC
 You can use them in =Preferences > Complex Modifications > Add rule=
 
-*** Modifiy hidden BIOS settings
+*** Modify hidden BIOS settings
+**** (Recommend) Advanced BIOS setting (credit [[github:lgs3137][@lgs3137]] / [[https://www.shinenet.cn/archives/61.html][@卖女孩的小火柴]] / [[github:fgfg163][@fgfg163]])
+1. Press @@html:<kbd>@@Delete@@html:</kbd>@@ to enter BIOS after power on.
+2. Press @@html:<kbd>@@Right Ctrl@@html:</kbd>@@, @@html:<kbd>@@Right
+   Shift@@html:</kbd>@@, @@html:<kbd>@@Left Alt@@html:</kbd>@@
+   and then @@html:<kbd>@@F2@@html:</kbd>@@ to open the hidden BIOS settings.
+   (Be careful with the key order)
+3. Change =Advanced -> CPU Configuration -> CFG Lock= to =Disabled=.
 **** Unlock CFG
 1. Use [[https://github.com/LongSoft/UEFITool][UEFITool]] to open the [[https://cn.msi.com/Laptop/support/GP62-6QG-1071XCN][BIOS file]].
 2. Search for =CFG Lock= in Text segment.
@@ -121,11 +128,10 @@ You can change =DVMT-Pre-Allocted= in the same way.
 Just search =DVMT= in your =cfg.txt= and do the same as follows.
 Change it to a size bigger than 96mb maybe helpful for DP output on 4K monitor.
 #+end_quote
-
 *** HDMI/DP
 1. Enable video output for your Product. (choose one method)
    - (default) use boot argument =agdpmod=vit9696= to disables check for board-id (credit [[https://github.com/acidanthera/WhateverGreen][WhateverGreen]])
-   - change =ProductName= to =MacBookPro13,1= in =config.plist=. (thanks to @hsulei)
+   - change =ProductName= to =MacBookPro13,1= in =config.plist=. (thanks to [[github:hsulei][@hsulei]])
    - add config to plist. (credit [[https://github.com/PLChinDev/Dell-Precision-5510-Catalina][@PLChinDev]])
      #+begin_src sh
        sudo mount -uw /
