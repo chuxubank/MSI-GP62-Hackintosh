@@ -42,7 +42,7 @@ installed is to follow the guide list below step by step.
 - [[http://enjoygineering.com/mounty/][Mounty]]
 
 ** Installation
-- [[https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/][OpenCore Vanilla Guide]]
+- [[https://github.com/dortania/vanilla-laptop-guide][OpenCore Vanilla Guide]]
 ** Post Installation
 *** CPU
 - [[https://github.com/stevezhengshiqi/one-key-cpufriend][one-key-cpufriend]]
