@@ -480,10 +480,6 @@
 	</dict>
 	<key>Misc</key>
 	<dict>
-		<key>BlessOverride</key>
-		<array>
-			<string>\EFI\Microsoft\Boot\bootmgfw.efi</string>
-		</array>
 		<key>Boot</key>
 		<dict>
 			<key>HibernateMode</key>
@@ -527,7 +523,7 @@
 			<key>AllowNvramReset</key>
 			<true/>
 			<key>AllowSetDefault</key>
-			<false/>
+			<true/>
 			<key>AuthRestart</key>
 			<false/>
 			<key>ExposeSensitiveData</key>
@@ -574,10 +570,6 @@
 				<data>Rg==</data>
 				<key>boot-args</key>
 				<string>agdpmod=vit9696</string>
-				<key>csr-active-config</key>
-				<data>AwAAAA==</data>
-				<key>prev-lang:kbd</key>
-				<data>cnUtUlU6MjUy</data>
 			</dict>
 		</dict>
 		<key>Block</key>
