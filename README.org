@@ -69,6 +69,12 @@ installed is to follow the guide list below step by step.
 - [[https://www.youtube.com/watch?v=JhA7e26dGgM][FIX iMessage, Facetime, and App Store 2018 Tutorial]]
 
 ** Others
+*** Time Sync
+Since macOS take BIOS time as UTC time, and Windows take it as local time, we need to make Windows take BIOS time as UTC time.
+#+BEGIN_SRC ps
+  sudo Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1
+#+END_SRC
+
 *** Disable auto mount
 #+BEGIN_SRC sh
   sudo cp ./Other/fstab /etc
