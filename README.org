@@ -7,6 +7,8 @@
 - Ethernet: Killer E2400
 - Wi-Fi: BCM94352Z
 - BIOS: E16J5IMS.11D
+- iGPU: Intel HD Graphics 530
+- eGPU: GeForce GTX 965M (Maxwell GM206)
 
 ** Reference
 - [[http://tonymacx86.com][tonymacx86]]
