@@ -44,8 +44,11 @@ installed is to follow the guide list below step by step.
 - [[http://enjoygineering.com/mounty/][Mounty]]
 
 ** Installation
-- [[https://github.com/dortania/vanilla-laptop-guide][OpenCore Vanilla Guide]]
+[[https://github.com/dortania/OpenCore-Install-Guide][Dortania's OpenCore Install Guide]]
+
 ** Post Installation
+[[https://github.com/dortania/OpenCore-Post-Install][OpenCore Post-Install]]
+
 *** CPU
 - [[https://github.com/stevezhengshiqi/one-key-cpufriend][one-key-cpufriend]]
 
