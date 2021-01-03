@@ -34,7 +34,7 @@ DefinitionBlock("", "SSDT", 2, "ACDT", "PNLF", 0)
     // For backlight control
     Device(_SB.PCI0.GFX0.PNLF)
     {
-        Name(_ADR, Zero)
+     // Name(_ADR, Zero)
         Name(_HID, EisaId("APP0002"))
         Name(_CID, "backlight")
         // _UID is set depending on PWMMax to match profiles in WhateverGreen.kext Info.plist
@@ -46,7 +46,17 @@ DefinitionBlock("", "SSDT", 2, "ACDT", "PNLF", 0)
         // 19: CoffeeLake 0xffff
         // 99: Other (requires custom AppleBacklightInjector.kext/WhateverGreen.kext)
         Name(_UID, 0)
-        Name(_STA, 0x0B)
+        Method (_STA, 0, NotSerialized)  // _STA: Status
+        {
+            If (_OSI ("Darwin"))
+            {
+                Return (0x0B)
+            }
+            Else
+            {
+                Return (Zero)
+            }
+        }
 
         Field(^RMP3, AnyAcc, NoLock, Preserve)
         {
