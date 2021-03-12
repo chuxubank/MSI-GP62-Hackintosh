@@ -5,7 +5,7 @@
 - Chipset: HM170
 - Audio: ALC898
 - Ethernet: Killer E2400
-- Wi-Fi: BCM94352Z
+- Wi-Fi: AC3165
 - BIOS: E16J5IMS.11D
 - iGPU: Intel HD Graphics 530
 - eGPU: GeForce GTX 965M (Maxwell GM206)
@@ -56,7 +56,7 @@ installed is to follow the guide list below step by step.
 - [[https://github.com/YoyPa/isw/wiki/MSI-G-laptop-EC---Rosetta][How EC work]]
 
 *** Bluetooth
-- [[https://github.com/acidanthera/BrcmPatchRAM][acidanthera/BrcmPatchRAM]]
+- [[https://github.com/OpenIntelWireless/IntelBluetoothFirmware][OpenIntelWireless/IntelBluetoothFirmware]]
 
 *** USB
 - [[https://www.tonymacx86.com/threads/guide-creating-a-custom-ssdt-for-usbinjectall-kext.211311/][(Guide) Creating a Custom SSDT for USBInjectAll.kext]]
