@@ -151,6 +151,8 @@ Just search =DVMT= in your =cfg.txt= and do the same as follows.
      #+end_src
 
 2. You should not plug in the HDMI/minDP cable until the macOS is booted to get the audio output.
+
+3. If you can't get video output on 4K displayer, you should wait for the system completed booted and make the internal screen black once(you can use hotcorner to "Put Display to Sleep"), and then you can plugin the cable and the external displayer will work.
 ** Notes
 - If you want to edit plist's =Data= type in Xcode, you should use format like =<01000000>=.
 ** Donate
