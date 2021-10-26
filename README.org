@@ -1,5 +1,5 @@
 * Hackintosh on MSI GP62 6QG-1071XCN
-#+HTML: <img src="https://github.com/chuxubank/MSI-GP62-Hackintosh/raw/oc/Other/screenshot.png" align="right" width="70%"/>
+#+HTML: <img src="https://github.com/chuxubank/MSI-GP62-Hackintosh/raw/oc-intel-lfs/Other/screenshot.png" align="right" width="70%"/>
 
 - CPU: i7-6700HQ
 - Chipset: HM170
