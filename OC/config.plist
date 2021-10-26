@@ -878,26 +878,6 @@
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>System/Library/Extensions/IO80211Family.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/IO80211Family</string>
-				<key>Identifier</key>
-				<string>com.apple.iokit.IO80211Family</string>
-				<key>MaxKernel</key>
-				<string>13.99.99</string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
 		</array>
 		<key>Patch</key>
 		<array>
@@ -1355,6 +1335,8 @@
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
+				<key>ForceDisplayRotationInEFI</key>
+				<integer>0</integer>
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
@@ -1476,12 +1458,12 @@
 			<string>Builtin</string>
 			<key>CustomDelays</key>
 			<false/>
+			<key>GraphicsInputMirroring</key>
+			<true/>
 			<key>KeyInitialDelay</key>
 			<integer>50</integer>
 			<key>KeySubsequentDelay</key>
 			<integer>5</integer>
-			<key>GraphicsInputMirroring</key>
-			<true/>
 			<key>PointerSpeedDiv</key>
 			<integer>1</integer>
 			<key>PointerSpeedMul</key>
@@ -1513,132 +1495,164 @@
 		<key>Drivers</key>
 		<array>
 			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string>HFS+ Driver</string>
+				<key>Enabled</key>
+				<true/>
 				<key>Path</key>
 				<string>HfsPlus.efi</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Arguments</key>
-				<string></string>
 			</dict>
 			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
 				<key>Path</key>
 				<string>OpenRuntime.efi</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Arguments</key>
-				<string></string>
 			</dict>
 			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<false/>
 				<key>Path</key>
 				<string>OpenCanopy.efi</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Arguments</key>
-				<string></string>
 			</dict>
 			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<false/>
 				<key>Path</key>
 				<string>AudioDxe.efi</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Arguments</key>
-				<string></string>
 			</dict>
 			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<false/>
 				<key>Path</key>
 				<string>OpenPartitionDxe.efi</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Arguments</key>
-				<string></string>
 			</dict>
 			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<false/>
 				<key>Path</key>
 				<string>OpenUsbKbDxe.efi</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Arguments</key>
-				<string></string>
 			</dict>
 			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<false/>
 				<key>Path</key>
 				<string>UsbMouseDxe.efi</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Arguments</key>
-				<string></string>
 			</dict>
 			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<false/>
 				<key>Path</key>
 				<string>Ps2KeyboardDxe.efi</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Arguments</key>
-				<string></string>
 			</dict>
 			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<false/>
 				<key>Path</key>
 				<string>Ps2MouseDxe.efi</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Arguments</key>
-				<string></string>
 			</dict>
 			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<false/>
 				<key>Path</key>
 				<string>HiiDatabase.efi</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Arguments</key>
-				<string></string>
 			</dict>
 			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<false/>
 				<key>Path</key>
 				<string>NvmExpressDxe.efi</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Arguments</key>
-				<string></string>
 			</dict>
 			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<false/>
 				<key>Path</key>
 				<string>XhciDxe.efi</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Arguments</key>
-				<string></string>
 			</dict>
 			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<false/>
 				<key>Path</key>
 				<string>ExFatDxe.efi</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Arguments</key>
-				<string></string>
 			</dict>
 			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<false/>
 				<key>Path</key>
 				<string>CrScreenshotDxe.efi</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Arguments</key>
-				<string></string>
 			</dict>
 			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<false/>
 				<key>Path</key>
 				<string>ext4_x64.efi</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Arguments</key>
-				<string></string>
 			</dict>
 			<dict>
-				<key>Path</key>
-				<string>OpenLinuxBoot.efi</string>
-				<key>Enabled</key>
-				<false/>
 				<key>Arguments</key>
 				<string></string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<false/>
+				<key>Path</key>
+				<string>OpenLinuxBoot.efi</string>
 			</dict>
 		</array>
 		<key>Input</key>
@@ -1738,9 +1752,9 @@
 			<true/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
-			<key>ForgeUefiSupport</key>
-			<false/>
 			<key>ForceOcWriteFlash</key>
+			<false/>
+			<key>ForgeUefiSupport</key>
 			<false/>
 			<key>IgnoreInvalidFlexRatio</key>
 			<false/>
