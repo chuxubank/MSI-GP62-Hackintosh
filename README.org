@@ -101,7 +101,7 @@ You can use them in =Preferences -> Complex Modifications -> Add rule=
    (Be careful with the key order)
 3. Change =Advanced -> CPU Configuration -> CFG Lock= to =Disabled=.
 **** Unlock CFG
-1. Use [[https://github.com/LongSoft/UEFITool][UEFITool]] to open the [[https://cn.msi.com/Laptop/support/GP62-6QG-1071XCN][BIOS file]].
+1. Use [[https://github.com/LongSoft/UEFITool][UEFITool]] to open the [[https://cn.msi.com/Laptop/GP62-6QG-1071XCN/support][BIOS file]].
 2. Search for =CFG Lock= in Text segment.
 3. In the search segment, double click the search resoult to jump to it.
 4. Right click the highlighted search resoult, click =Extract body...=, and save
