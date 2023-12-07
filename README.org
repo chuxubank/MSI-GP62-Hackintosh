@@ -54,6 +54,10 @@ installed is to follow the guide list below step by step.
 
 *** Fan Control
 - [[https://github.com/YoyPa/isw/wiki/MSI-G-laptop-EC---Rosetta][How EC work]]
+- [[https://github.com/lgs3137/MSIFanControl]][MSI Fan Control]
+#+BEGIN_SRC sh
+  /Volumes/EFI/EFI/Other/MSIECControl 0 0 40 60 80 100
+#+END_SRC
 
 *** Bluetooth
 - [[https://github.com/OpenIntelWireless/IntelBluetoothFirmware][OpenIntelWireless/IntelBluetoothFirmware]]
